@@ -1,5 +1,5 @@
 {
-	"name": "APP-NAME",
+	"name": "magazine",
 	"version": "1.0.0",
 	"private": false,
 	"dependencies": {
@@ -20,9 +20,7 @@
 		"start": "env-cmd -f .env react-scripts start",
 		"prebuild": "react-scripts test --watchAll=false",
 		"build": "cross-env GENERATE_SOURCEMAP=false env-cmd -f .env react-scripts build",
-		"postbuild": "cp -r build/* ../backend/src/client",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"test": "react-scripts test"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

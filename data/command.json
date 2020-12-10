@@ -1,0 +1,77 @@
+{
+	"whoami": "nb/nb",
+	"pwd": "https://altmshfkgudtjr.github.io/MAGAZINE/terminal",
+	"exit": {
+		"type": "ACTION",
+		"content": "close"
+	},
+	"ls": [
+		{
+			"name": "concept",
+			"type": "FORLDER",
+			"content": "/concept"
+		},
+		{
+			"name": "contents",
+			"type": "FORLDER",
+			"content": "/contents"
+		},
+		{
+			"name": "info",
+			"type": "FORLDER",
+			"content": "/info"
+		},
+		{
+			"name": "project",
+			"type": "FORLDER",
+			"content": "/project"
+		},
+		{
+			"name": "exhibition",
+			"type": "FORLDER",
+			"content": "/exhibition"
+		},
+		{
+			"name": "terminal",
+			"type": "FORLDER",
+			"content": "/terminal"
+		},
+		{
+			"name": "",
+			"type": "SECRET",
+			"content": ""
+		}
+	],
+	"cd": [
+		{
+			"name": "concept",
+			"type": "URL",
+			"content": "/concept"
+		},
+		{
+			"name": "contents",
+			"type": "URL",
+			"content": "/contents"
+		},
+		{
+			"name": "info",
+			"type": "URL",
+			"content": "/info"
+		},
+		{
+			"name": "project",
+			"type": "URL",
+			"content": "/project"
+		},
+		{
+			"name": "exhibition",
+			"type": "URL",
+			"content": "/exhibition"
+		},
+		{
+			"name": "terminal",
+			"type": "URL",
+			"content": "/terminal"
+		}
+	]
+}

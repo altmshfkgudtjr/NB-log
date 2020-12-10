@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>App-Name</title>
-    <meta
-      name="description"
-      content="Describe Your App"
-    />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="icon" sizes="24x24" href="%PUBLIC_URL%/favicons/favicon_24x24.png" />
-    <link rel="icon" sizes="48x48" href="%PUBLIC_URL%/favicons/favicon_48x48.png" />
-    <link rel="icon" sizes="96x96" href="%PUBLIC_URL%/favicons/favicon_96x96.png" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicons/favicon_96x96.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--Open Graph tag-->
-    <meta property="og:title" content="App-Name">
-    <meta property="og:description" content="Describe Your App">
-    <meta property="og:image" content="%PUBLIC_URL%/images/logo.png">
-    <!-- Mobile Browser Color -->
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-     <!-- Global CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/global.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<title>MAGAZINE</title>
+		<meta
+			name="NB#log"
+			content="Hyeongseok Kim Portfolio 2021"
+		/>
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<link rel="icon" sizes="24x24" href="%PUBLIC_URL%/favicons/favicon_24x24.png" />
+		<link rel="icon" sizes="48x48" href="%PUBLIC_URL%/favicons/favicon_48x48.png" />
+		<link rel="icon" sizes="96x96" href="%PUBLIC_URL%/favicons/favicon_96x96.png" />
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/favicons/favicon_96x96.png" />
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<!--Open Graph tag-->
+		<meta property="og:title" content="NB#log">
+		<meta property="og:description" content="Hyeongseok Kim Portfolio 2021">
+		<meta property="og:image" content="%PUBLIC_URL%/images/logo.png">
+		<!-- Mobile Browser Color -->
+		<meta name="theme-color" content="#fff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- Global CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/global.css">
+	</head>
+	<body>
+		<div id="root"></div>
+	</body>
+	<script type="text/javascript">
+		// Single Page Apps for GitHub Pages
+		// https://github.com/rafrex/spa-github-pages
+		// Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+		// ----------------------------------------------------------------------
+		// This script checks to see if a redirect is present in the query string
+		// and converts it back into the correct url and adds it to the
+		// browser's history using window.history.replaceState(...),
+		// which won't cause the browser to attempt to load the new url.
+		// When the single page app is loaded further down in this file,
+		// the correct url will be waiting in the browser's history for
+		// the single page app to route accordingly.
+		(function(l) {
+			if (l.search) {
+				var q = {};
+				l.search.slice(1).split('&').forEach(function(v) {
+					var a = v.split('=');
+					q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+				});
+				if (q.p !== undefined) {
+					window.history.replaceState(null, null,
+						l.pathname.slice(0, -1) + (q.p || '') +
+						(q.q ? ('?' + q.q) : '') +
+						l.hash
+					);
+				}
+			}
+		}(window.location))
+	</script>
 </html>

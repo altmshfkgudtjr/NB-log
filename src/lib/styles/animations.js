@@ -54,11 +54,6 @@ const tooltip = keyframes`
 	50% { opacity: 1; } 
 	100% { opacity: 1; }
 `;
-const pulse = keyframes`
-	0% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7); }
-	70% { box-shadow: 0 0 0 10px rgba(0, 123, 255, 0); }
-	100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
-`;
 const animations = {
 	fadeIn,
 	fadeOut,
@@ -72,8 +67,7 @@ const animations = {
 	fadeOutBottom,
 	zoomIn,
 	zoomOut,
-	tooltip,
-	pulse
+	tooltip
 };
 
 export default animations

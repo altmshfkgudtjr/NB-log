@@ -4,7 +4,7 @@ import qrcode from 'qrcode-generator'
 import Wrapper from 'components/qrcode/Wrapper'
 import Image from 'components/qrcode/Image'
 
-const Qrcode = ({ show, onClose }) => {
+const Qrcode = ({ onClose }) => {
 	const url = window.location.href;
 	const qr = qrcode(4, 'L');
 	qr.addData(url);

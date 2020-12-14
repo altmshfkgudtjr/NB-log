@@ -34,7 +34,9 @@ const Header = () => {
 	const onFullScreen = () => {
 		if (fullScreen === 1) {
 			setFullScreen(2);
-			document.exitFullscreen();
+			if (!!document.fullscreenElement) {
+				document.exitFullscreen();
+			}
 		} else {
 			setFullScreen(1);
 			document.body.requestFullscreen();

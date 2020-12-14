@@ -4,6 +4,7 @@
 	"private": false,
 	"dependencies": {
 		"immer": "^7.0.14",
+		"qrcode-generator": "^1.4.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-helmet-async": "^1.0.6",

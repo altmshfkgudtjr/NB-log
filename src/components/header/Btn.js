@@ -1,28 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
+// component
+import { Clip, Hexagonal, Inner, Outer } from 'lib/icons'
 // lib
 import * as styles from 'lib/styles/styles'
 import palette from 'lib/styles/palette'
 
-const Btn = ({ onClick }) => {
+const provideMap = {
+	clip: Clip,
+	hexagonal: Hexagonal,
+	inner: Inner,
+	outer: Outer
+};
+
+const Btn = ({ icon, onClick }) => {
+	const Icon = provideMap[icon];
+
 	return (
 		<Container onClick={onClick}>
 			<Background />
-			{/* SVG ICON: absolute */}
+			<IconBlock>
+				<Icon />
+			</IconBlock>
 		</Container>
 	);
 }
 
 const Container = styled.button`
+	position: relative;
 	width: 40px;
 	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	cursor: pointer;
 	padding: 0;
 	margin-right: 2rem;
-	opacity: .6;
+	opacity: .8;
 
 	&:last-child {
 		margin-right: 0;
@@ -33,7 +44,7 @@ const Container = styled.button`
 
 		& > div {
 			opacity: .8;
-			transform: scale(.5, .5);
+			transform: scale(.7, .7);
 		}
 	}
 
@@ -46,16 +57,33 @@ const Container = styled.button`
 `;
 
 const Background = styled.div`
-	width: 32px;
-	height: 32px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 100%;
+	height: 100%;
 	border-radius: 100%;
 	background-color: ${palette.gray1};
 	opacity: 0;
 	transform: scale(0, 0);
+	transition: .3s ${styles.transition};
+`;
+
+const IconBlock = styled.a`
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 24px;
+	height: 24px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
 	transition: .2s ${styles.transition};
+
+	svg {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 export default Btn

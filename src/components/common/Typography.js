@@ -55,6 +55,8 @@ const Typography = ({ textList }) => {
 }
 
 const Content = styled.div`
+	width: 100%;
+	height: 60px;
 	white-space: pre-wrap;
 	font-size: 18px;
 	font-weight: 200;

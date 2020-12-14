@@ -6,9 +6,12 @@ const TypoWrapper = ({ children }) => {
 }
 
 const Container = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
-	width: fit-content;
-	height: fit-content;
+	width: 100%;
+	height: 100px;
 	left: 0;
 	right: 0;
 	top: 0;

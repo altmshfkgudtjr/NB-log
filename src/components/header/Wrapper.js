@@ -14,6 +14,7 @@ const Container = styled.div`
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 0 2rem;
+	z-index: 20;
 
 	& > div {
 		display: flex;

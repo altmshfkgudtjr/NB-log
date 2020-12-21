@@ -8,15 +8,13 @@ import { HelmetProvider } from "react-helmet-async"
 import store from 'store/index'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-  	  <Provider store={store}>
-    		<HelmetProvider>
-					<App />
-				</HelmetProvider>
-      </Provider>
-   	</BrowserRouter>
-  </React.StrictMode>, 
+  <BrowserRouter>
+	  <Provider store={store}>
+  		<HelmetProvider>
+				<App />
+			</HelmetProvider>
+    </Provider>
+ 	</BrowserRouter>, 
   document.getElementById('root')
 );
 

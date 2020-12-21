@@ -1,21 +1,27 @@
 import React from 'react';
 import { Helmet } from "react-helmet-async"
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { useDispatch } from 'react-redux'
 // lib
 import { transition, noselect } from 'lib/styles/styles'
 import palette from 'lib/styles/palette'
+// mopdules
+import { openPage } from 'modules/pageloading'
 
 function NoPage() {
+	const dispatch = useDispatch();
+
+	const onBack = () => {
+		dispatch(openPage('/'));
+	}
+
 	return (<>
 		<Helmet>
-			<title>APP-NAME - 404</title>
+			<title>NB#log - 404</title>
 		</Helmet>
 
 		<Title>404 Not Found.</Title>
-		<Link to="/">
-			<Btn>Back</Btn>
-		</Link>
+		<Btn onClick={onBack}>Back</Btn>
 	</>);
 }
 

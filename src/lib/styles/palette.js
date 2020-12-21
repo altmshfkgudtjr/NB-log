@@ -71,6 +71,13 @@ const palette = {
   blue6: '#003e80',
   blue7: '#001f40',
   blue8: '#001226',
+  /* custom */
+  hexRed: '#ffc2fd',
+  hexOrange: '#ffc8c8',
+  hexYellow: '#fcf894',
+  hexGreen: '#9be8af',
+  hexBlue: '#a1d0ff',
+  hexPurple: '#c1aaf8'
 };
 
 export default palette

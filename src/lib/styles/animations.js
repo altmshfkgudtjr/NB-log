@@ -127,20 +127,41 @@ const fadeOutLeft = keyframes`
 		transform: translateX(-20px);
 	}
 `;
+
 const zoomIn = keyframes`
 	0% { opacity: 0; transform: scale(.5, .5); }
 	100% { opacity: 1; transform: scale(1, 1); }
 `;
+
 const zoomOut = keyframes`
 	0% { opacity: 1; transform: scale(1, 1); }
 	100% { opacity: 0; transform: scale(.5, .5); }
 `;
+
 const tooltip = keyframes`
 	0% { opacity: 0; }
 	40% { opacity: 0; }
 	50% { opacity: 1; } 
 	100% { opacity: 1; }
 `;
+
+const loadingOn = keyframes`
+	0% { transform: translateY(50%); opacity: 0; }
+	20% { transform: translateY(50%); opacity: 0; }
+	100% { transform: translateY(0); opacity: 1; }
+`;
+
+const loadingOff = keyframes`
+	0% { transform: translateY(0); opacity: 1; }
+	30% { transform: translateY(5%); opacity: 1; }
+	100% { transform: translateY(-50%); opacity: 0; }
+`;
+
+const hexagonalSpin = keyframes`
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+`;
+
 const animations = {
 	fadeIn,
 	fadeOut,
@@ -156,7 +177,10 @@ const animations = {
 	fadeOutBottom,
 	zoomIn,
 	zoomOut,
-	tooltip
+	tooltip,
+	loadingOn,
+	loadingOff,
+	hexagonalSpin
 };
 
 export default animations

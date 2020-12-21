@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router'
+import { useDispatch } from 'react-redux'
 // containers
 import Qrcode from 'containers/Qrcode'
 // components
 import Wrapper from 'components/header/Wrapper'
 import Btn from 'components/header/Btn'
+// moduels
+import { openPage } from 'modules/pageloading'
 
 const Header = () => {
 	const history = useHistory();
+	const dispatch = useDispatch();
 	const [qrcode, setQrcode] = useState(false);
 	const [fullScreen, setFullScreen] = useState(0);
 	/*
@@ -16,8 +20,14 @@ const Header = () => {
 		2: on
 	*/
 
-	const onClickHexagonal = () => {
-		history.push('/main');
+	const onClickHexagonal = (e) => {
+		e.preventDefault();
+		
+		if (history.location.pathname === '/main') {
+			return;
+		} else {
+			dispatch(openPage('/main'));
+		}
 	}
 
 	const onOpenQrcode = () => {

@@ -5,6 +5,7 @@ import { Clip, Hexagonal, Inner, Outer } from 'lib/icons'
 // lib
 import * as styles from 'lib/styles/styles'
 import palette from 'lib/styles/palette'
+import media from 'lib/styles/media'
 
 const provideMap = {
 	clip: Clip,
@@ -34,6 +35,10 @@ const Container = styled.button`
 	padding: 0;
 	margin-right: 2rem;
 	opacity: .8;
+
+	${media.small} {
+		margin-right: 1rem;
+	}
 
 	&:last-child {
 		margin-right: 0;

@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from "react-helmet-async"
 // components
 import Lines from 'components/canvas/Lines'
-import TypoWrapper from 'components/main/TypoWrapper'
+import TypoWrapper from 'components/home/TypoWrapper'
 import Typography from 'components/common/Typography'
 import Copyright from 'components/common/Copyright'
 

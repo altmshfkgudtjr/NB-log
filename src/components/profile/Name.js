@@ -1,0 +1,25 @@
+import React from 'react'
+import styled from 'styled-components'
+// lib
+import animations from 'lib/styles/animations'
+import media from 'lib/styles/media'
+
+const Name = ({ message, show }) => {
+	return <Content show={show}>{message}</Content>;
+}
+
+const Content = styled.div`
+	font-size: 48px;
+	padding-top: 16px;
+	animation: .4s ${props => props.show
+		? animations.fadeInBottom
+		: animations.fadeOutTop
+	};
+
+	${media.small} {
+		font-size: 32px;
+		padding-top: 16px;
+	}
+`;
+
+export default Name

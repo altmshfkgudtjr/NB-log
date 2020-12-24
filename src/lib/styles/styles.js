@@ -11,6 +11,23 @@ export const transition = ()=>`
 	cubic-bezier(0.25, 0.1, 0.25, 1);
 `;
 
+export const scrollbar = (width=10) => `
+	&::-webkit-scrollbar {
+		width: ${width}px;
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #ddd;
+		border-radius: 10px;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: #ccc;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+`
+
 export const boxShadow = {
 	light: "0px 4px 16px rgba(0, 0, 0, 0.04)",
 	regular: "0px 8px 12px rgba(0, 0, 0, 0.2)",

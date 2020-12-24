@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router'
 import { useDispatch } from 'react-redux'
 // containers
-import Qrcode from 'containers/Qrcode'
+import Qrcode from 'containers/common/Qrcode'
 // components
 import Wrapper from 'components/header/Wrapper'
 import Btn from 'components/header/Btn'

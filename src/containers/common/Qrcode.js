@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import qrcode from 'qrcode-generator'
 // components
-import Wrapper from 'components/qrcode/Wrapper'
-import Image from 'components/qrcode/Image'
+import Wrapper from 'components/common/qrcode/Wrapper'
+import Image from 'components/common/qrcode/Image'
 
 const Qrcode = ({ onClose }) => {
 	const url = window.location.href;

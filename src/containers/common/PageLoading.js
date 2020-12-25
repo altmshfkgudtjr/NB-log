@@ -58,7 +58,7 @@ const Container = styled.div`
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 
 	${props => (props.visited < 2 && css`
 		animation: ${animations.fadeIn} ease ${props => props.time + 'ms'}
@@ -67,6 +67,10 @@ const Container = styled.div`
 	`) || css`
 		animation: ${animations.loadingOn} ease ${props => props.time + 'ms'}
 	`};
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 `;
 
 export default PageLoading

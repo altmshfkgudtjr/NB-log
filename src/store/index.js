@@ -3,13 +3,15 @@ import ReduxThunk from 'redux-thunk';
 // Reducers
 import modal from 'modules/modal'
 import pageloading from 'modules/pageloading'
+import json from 'modules/json'
 
 /* 
 	Combine Reducers
 */
 const reducers = combineReducers({
 	modal,
-	pageloading
+	pageloading,
+	json
 });
 
 /* 

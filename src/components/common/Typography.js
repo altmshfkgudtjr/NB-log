@@ -22,13 +22,14 @@ const Typography = ({ textList }) => {
 	}
 
 	const inputText = () => {
+		if (textList.length === 0) return;
 		changeText(0, textList[idx], true).then(() => {
 			event = setTimeout(() => setShow(true), 3000);
 		});
-
 	}
 
 	const deleteText = () => {
+		if (textList.length === 0) return;
 		changeText(textList[idx].length, textList[idx], false).then(() => {
 			setIdx((idx + 1) % textList.length)
 			setShow(false);
@@ -48,7 +49,7 @@ const Typography = ({ textList }) => {
 				clearTimeout(event);
 			}
 		}
-	}, [show]);
+	}, [show, textList]);
 	/* eslint-enable */
 
 	return <Content>{typo}</Content>;

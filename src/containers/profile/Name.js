@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import useInterval from 'lib/hooks/useInterval'
 // components
 import Wrapper from 'components/profile/Wrapper'
 import NameContent from 'components/profile/Name'
+// modules
+import { getInfo } from 'modules/json'
 
 const Name = () => {
-	const name_list = ['Hyungseok Kim', '金亨錫', '김형석', 'NB'];
+	const dispatch = useDispatch();
+	const name_list = useSelector(state => state.json.info.name);
 	const [target, setTarget] = useState(0);
 	const [anime, setAinme] = useState(true);
-	
+
 	const changingName = () => {
 		setAinme(false);
 		setTimeout(() => {
@@ -24,6 +28,10 @@ const Name = () => {
 	useInterval(() => {
 		changingName();
 	}, 4000);
+
+	useEffect(() => {
+		dispatch(getInfo());
+	}, [dispatch]);
 
 	return (
 		<Wrapper>

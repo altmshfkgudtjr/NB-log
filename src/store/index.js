@@ -4,6 +4,7 @@ import ReduxThunk from 'redux-thunk';
 import modal from 'modules/modal'
 import pageloading from 'modules/pageloading'
 import json from 'modules/json'
+import project from 'modules/project'
 
 /* 
 	Combine Reducers
@@ -11,7 +12,8 @@ import json from 'modules/json'
 const reducers = combineReducers({
 	modal,
 	pageloading,
-	json
+	json,
+	project
 });
 
 /* 

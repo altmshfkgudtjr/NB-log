@@ -88,7 +88,7 @@ function json(state = initialState, action) {
 
 		case SET_PROJECTS:
 			return produce(state, draft => {
-				draft.projects = action.payload;
+				draft.projects = action.payload.projects;
 			});
 
 		case SET_SENTENCES:

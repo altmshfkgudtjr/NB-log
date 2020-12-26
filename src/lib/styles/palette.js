@@ -12,7 +12,7 @@
 */
 const palette = {
   /* gray */
-  gray0: '#f7f6f3',
+  gray0: '#fafafa',
   gray1: '#eeeceb',
   gray2: '#dedddb',
   gray3: '#cbc5c2',

@@ -16,7 +16,6 @@ import { getInfo } from 'modules/json'
 const Content = () => {
 	const dispatch = useDispatch();
 	const info = useSelector(state => state.json.info);
-	console.log(info);
 
 	useEffect(() => {
 		dispatch(getInfo());

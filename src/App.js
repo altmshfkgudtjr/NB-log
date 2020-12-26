@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import HomePage from 'pages/HomePage'
 import MainPage from 'pages/MainPage'
 import ProfilePage from 'pages/ProfilePage'
+import ProjectPage from 'pages/ProjectPage'
 import NotFound from 'pages/NotFound'
 // Containers
 import Header from 'containers/Header'
@@ -20,6 +21,7 @@ const App = () => {
 				<Route path="/" component={HomePage} exact />
 				<Route path="/main" component={MainPage} exact />
 				<Route path="/profile" component={ProfilePage} exact />
+				<Route path="/project" component={ProjectPage} exact />
 				<Route path="*" component={NotFound} status={404} />
 			</Switch>
 			<Modal />

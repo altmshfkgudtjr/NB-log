@@ -12,7 +12,7 @@ function NoPage() {
 	const dispatch = useDispatch();
 
 	const onBack = () => {
-		dispatch(openPage('/'));
+		dispatch(openPage('/main'));
 	}
 
 	return (<>

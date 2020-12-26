@@ -1,13 +1,14 @@
-{
+  {
 	"projects": [
 		{
-			"title": "",
-			"info": [""],
-			"position": ["Front-end"],
-			"date": ["DECEMBER", "2020"],
-			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr",
-			"color": "#000000",
+			"title": "Q O J",
+			"img": "https://user-images.githubusercontent.com/47492535/103151381-0995bb00-47c1-11eb-89ef-a33e53f53d8d.png",
+			"info": ["SQL Online Judge System"],
+			"position": ["Front-end", "Database design"],
+			"date": ["MAY", "2020"],
+			"collaborator": ["NB", "X", "837477"],
+			"url": "https://github.com/altmshfkgudtjr/QOJ_client",
+			"color": "#0C88A0",
 			"post": [
 				[
 					{
@@ -22,13 +23,14 @@
 			]
 		},
 		{
-			"title": "",
-			"info": [""],
-			"position": ["Front-end"],
-			"date": ["DECEMBER", "2020"],
+			"title": "STUDIO",
+			"img": "https://raw.githubusercontent.com/altmshfkgudtjr/NB_Portfolio_2020/master/img.png",
+			"info": ["Portfolio template like", "a studio"],
+			"position": ["Toy Project"],
+			"date": ["JANUARY", "2020"],
 			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr",
-			"color": "#000000",
+			"url": "https://github.com/altmshfkgudtjr/NB_Portfolio_2020",
+			"color": "#707070",
 			"post": [
 				[
 					{
@@ -43,13 +45,14 @@
 			]
 		},
 		{
-			"title": "",
-			"info": [""],
+			"title": "SIGNUS",
+			"img": "https://user-images.githubusercontent.com/47492535/103151341-a1df7000-47c0-11eb-994e-36cf8dc83e96.png",
+			"info": ["Social Network Service In 20s"],
 			"position": ["Front-end"],
-			"date": ["DECEMBER", "2020"],
-			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr",
-			"color": "#000000",
+			"date": ["NOVEMBER", "2020"],
+			"collaborator": ["Team IML"],
+			"url": "https://github.com/altmshfkgudtjr/SIGNUS_client",
+			"color": "#43A483",
 			"post": [
 				[
 					{
@@ -64,13 +67,14 @@
 			]
 		},
 		{
-			"title": "",
-			"info": [""],
-			"position": ["Front-end"],
-			"date": ["DECEMBER", "2020"],
-			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr",
-			"color": "#000000",
+			"title": "SOOJLE",
+			"img": "https://user-images.githubusercontent.com/47492535/103151347-b02d8c00-47c0-11eb-97d2-06ff3ab9ae34.png",
+			"info": ["Univ. Sejong Information Service", "by A.I"],
+			"position": ["Front-end", "Data Crawler"],
+			"date": ["DECEMBER", "2019"],
+			"collaborator": ["Team IML"],
+			"url": "https://github.com/altmshfkgudtjr/SOOJLE_FRONT",
+			"color": "#CC372B",
 			"post": [
 				[
 					{
@@ -85,13 +89,14 @@
 			]
 		},
 		{
-			"title": "",
-			"info": [""],
+			"title": "MODAKBUL",
+			"img": "https://user-images.githubusercontent.com/47492535/103151349-b1f74f80-47c0-11eb-8634-56b12b04f241.png",
+			"info": ["SW Convergence College Official Site"],
 			"position": ["Front-end"],
-			"date": ["DECEMBER", "2020"],
-			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr",
-			"color": "#000000",
+			"date": ["AUGUST", "2020"],
+			"collaborator": ["Team IML", "X", "James Jung"],
+			"url": "https://github.com/altmshfkgudtjr/MODAKBUL_INTEGRATE",
+			"color": "#455484",
 			"post": [
 				[
 					{
@@ -106,13 +111,14 @@
 			]
 		},
 		{
-			"title": "",
-			"info": [""],
-			"position": ["Front-end"],
-			"date": ["DECEMBER", "2020"],
+			"title": "ELE POSITION",
+			"img": "https://user-images.githubusercontent.com/47492535/103151348-b15eb900-47c0-11eb-9edd-f1e251704ab2.png",
+			"info": ["Stained Glass"],
+			"position": ["Toy Project"],
+			"date": ["NOVEMBER", "2020"],
 			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr",
-			"color": "#000000",
+			"url": "https://github.com/altmshfkgudtjr/ELEposition",
+			"color": "#CCB12B",
 			"post": [
 				[
 					{

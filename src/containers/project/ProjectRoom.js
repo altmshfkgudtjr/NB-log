@@ -24,7 +24,7 @@ const ProjectRoom = () => {
 
 	useEffect(() => {
 		dragScreen(document.querySelector("#dragging"));
-		return () => document.querySelector("dragging").onmousedown = null;
+		return () => document.querySelector("#dragging").onmousedown = null;
 	}, []);
 
 	const ProjectList = projects.map(
@@ -36,7 +36,7 @@ const ProjectRoom = () => {
 	);
 
 	return (
-		<Wrapper>{ProjectList}</Wrapper>
+		<Wrapper projectNum={projects.length}>{ProjectList}</Wrapper>
 	);
 }
 

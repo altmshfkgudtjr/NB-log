@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 // lib
 import * as styles from 'lib/styles/styles'
+import media from 'lib/styles/media'
 
 const ProjectCover = ({ project }) => {
 	const PositionList = project.position.map((data, idx) => <div key={idx}>{data}</div>);
@@ -39,6 +40,16 @@ const Container = styled.div`
 	background-color: ${props => props.color};
 	box-shadow: ${styles.boxShadow.regular};
 	z-index: 5;
+
+	${media.small} {
+		width: 100%;
+		height: 300px;
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		width: 50%;
+		height: 100%;
+	}
 `;
 
 const Content = styled.div`
@@ -59,6 +70,10 @@ const Info = styled.div`
 		font-size: 12px;
 		font-weight: 100;
 	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		display: none;
+	}
 `;
 
 const Title = styled.div`
@@ -66,7 +81,23 @@ const Title = styled.div`
 	font-weight: 300;
 	color: white;
 	line-height: 1;
-	padding-top: 8px;
+	padding-top: 1rem;
+	
+	@media screen and (max-width: 1100px) and (orientation: landscape) {
+		font-size: 48px;
+	}
+
+	${media.small} {
+		font-size: 44px;
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		font-size: 38px;
+	}
+
+	@media screen and (max-width: 300px) {
+		font-size: 38px;
+	}
 `;
 
 const BottomWrapper = styled.div`

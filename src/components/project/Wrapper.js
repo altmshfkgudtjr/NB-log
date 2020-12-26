@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+// lib
+import { scrollHorizontal } from 'lib/scrollHorizontal'
+import media from 'lib/styles/media'
 
-const Wrapper = ({ children }) => {
+const Wrapper = ({ projectNum, children }) => {
 	return (
-		<Container id="dragging">
-			<Content>
+		<Container id="dragging" onWheel={scrollHorizontal}>
+			<Content projectNum={projectNum}>
 				{children}
 			</Content>
 		</Container>
@@ -23,6 +26,20 @@ const Container = styled.div`
 	&::-webkit-scrollbar {
 		display: none;
 	}
+
+	${media.small} {
+		height: auto;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding-bottom: 4rem;
+	}
+
+	@media screen and (max-height: 500px) and (orientation: landscape) {
+		height: 100vh;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding-bottom: 0;
+	}
 `;
 
 const Content = styled.div`
@@ -31,6 +48,31 @@ const Content = styled.div`
 	grid-template-columns: repeat(7, 360px);
 	grid-auto-flow: column;
 	padding: 0 4rem;
+
+	@media screen and (min-width: 3000px) {
+		grid-template-rows: repeat(2, 500px);
+		grid-template-columns: repeat(7, 500px);
+	}
+
+	@media screen and (max-width: 1100px) and (orientation: landscape) {
+		grid-template-rows: repeat(2, 300px);
+		grid-template-columns: repeat(7, 300px);
+	}
+
+	${media.small} {
+		margin-top: 5rem;
+		padding: 0 1rem;
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		display: grid;
+		grid-template-rows: repeat(1, 240px);
+		grid-template-columns: repeat(12, 240px);
+		margin-top: 3rem;
+	}
 `;
 
 export default Wrapper

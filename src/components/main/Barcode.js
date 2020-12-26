@@ -22,7 +22,7 @@ const Content = styled.img`
 		width: 160px;
 		left: 0;
 		right: 0;
-		bottom: 1rem;
+		bottom: 4rem;
 		margin: auto;
 	}
 `;

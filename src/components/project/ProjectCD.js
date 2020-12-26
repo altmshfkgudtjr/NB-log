@@ -3,6 +3,7 @@ import styled from 'styled-components'
 // lib
 import * as styles from 'lib/styles/styles'
 import palette from 'lib/styles/palette'
+import media from 'lib/styles/media'
 
 const ProjectCD = ({ img }) => {
 	return (
@@ -38,6 +39,14 @@ const Container = styled.div`
 		border-radius: 100%;
 		box-shadow: ${styles.boxShadow.regular};
 		transition: 5s ${styles.transition};
+	}
+
+	${media.small} {
+		display: none;
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		display: flex;
 	}
 `;
 

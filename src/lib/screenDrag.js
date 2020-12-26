@@ -21,6 +21,7 @@ export const dragScreen = (target) => {
 	}
 
 	function mouseUp(e) {
+		e.preventDefault();
 		target.onmouseup = null;
 		target.onmousemove = null;
 		document.body.style.cursor = '';

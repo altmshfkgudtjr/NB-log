@@ -21,6 +21,9 @@ const Container = styled.div`
 	${media.small} {
 		height: 56px;
 		padding: 0 1rem;
+		background-color: white;
+		padding-bottom: .5rem;
+		border-bottom: 2px solid #f2f2f2;
 	}
 
 	& > div {

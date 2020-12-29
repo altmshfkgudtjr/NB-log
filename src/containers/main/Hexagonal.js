@@ -47,7 +47,7 @@ const Hexagonal = () => {
 			<Triangle message="PROJECT" onClick={() => onClick('/project')} pop={pop[1]} />
 			<Triangle message="TERMINAL" onClick={() => onClick('/terminal')} pop={pop[2]} />
 			<Triangle message="CONCEPT" onClick={() => onClick('/')} pop={pop[3]} />
-			<Triangle message="MAKING" onClick={() => onClick('/makingfirm')} pop={pop[4]} />
+			<Triangle message="MAKING" onClick={() => onClick('/making')} pop={pop[4]} />
 			<Triangle message="PROFILE" onClick={() => onClick('/profile')} pop={pop[5]} />
 		</HexagonalWrapper>
 	);

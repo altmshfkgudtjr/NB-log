@@ -162,6 +162,11 @@ const hexagonalSpin = keyframes`
 	100% { transform: rotate(360deg); }
 `;
 
+const hexagonalDraw = keyframes`
+	from { stroke-dashoffset: 272; }
+	to { stroke-dashoffset: 0; }
+`;
+
 const animations = {
 	fadeIn,
 	fadeOut,
@@ -180,7 +185,8 @@ const animations = {
 	tooltip,
 	loadingOn,
 	loadingOff,
-	hexagonalSpin
+	hexagonalSpin,
+	hexagonalDraw
 };
 
 export default animations

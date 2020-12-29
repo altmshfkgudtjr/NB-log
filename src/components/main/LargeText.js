@@ -23,6 +23,10 @@ const Content = styled.div`
 	${media.small} {
 		display: none;
 	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		display: none;
+	}
 `;
 
 export default LargeText

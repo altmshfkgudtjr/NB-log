@@ -25,6 +25,10 @@ const Content = styled.img`
 		bottom: 4rem;
 		margin: auto;
 	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		display: none;
+	}
 `;
 
 export default Barcode

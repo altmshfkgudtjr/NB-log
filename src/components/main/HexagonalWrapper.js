@@ -33,6 +33,16 @@ const Content =styled.div`
 	position: relative;
 	margin: 0 auto;
 	animation: 1.4s ${animations.zoomIn} ease;
+
+	${media.small} {
+		animation: 1.4s ${animations.zoomInHexaMobile} ease;
+		transform: scale(.8);
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		animation: 1.4s ${animations.zoomInHexaMobile} ease;
+		transform: scale(.8);
+	}
 `;
 
 export default HexagonalWrapper

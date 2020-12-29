@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async'
 import Name from 'containers/profile/Name'
 import Hexagonal from 'containers/making/Hexagonal'
 import HexagonalText from 'containers/making/HexagonalText'
+import Content from 'containers/making/Content'
 // components
 import Title from 'components/making/Title'
 
@@ -17,6 +18,7 @@ const MakingPage = () => {
 		<Hexagonal />
 		<Title message="FBWE - For Better Web Experience." />
 		<HexagonalText />
+		<Content />
 	</>);
 }
 

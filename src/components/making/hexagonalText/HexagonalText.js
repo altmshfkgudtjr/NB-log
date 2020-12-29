@@ -34,7 +34,16 @@ const Container = styled.div`
 		
 		& > svg {
 			height: 200px;
-			width: 40vw;
+			width: 32vw;
+		}
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		padding: 0 1rem;
+		
+		& > svg {
+			height: 200px;
+			width: 20vw;
 		}
 	}
 `;

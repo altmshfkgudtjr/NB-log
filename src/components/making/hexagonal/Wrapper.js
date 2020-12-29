@@ -12,7 +12,7 @@ const Container = styled.div`
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: calc(100vh - 150px - 64px - 120px);
+	height: calc(100vh - 150px - 64px - 160px);
 
 	& > svg {
 		margin-bottom: 4rem;
@@ -22,6 +22,16 @@ const Container = styled.div`
 		height: calc(100vh - 126px - 56px - 80px);
 
 		& > svg {
+			margin-bottom: 2rem;
+		}
+	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		height: auto;
+
+		& > svg {
+			height: 200px;
+			margin-top: 2rem;
 			margin-bottom: 2rem;
 		}
 	}

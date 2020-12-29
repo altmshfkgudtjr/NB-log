@@ -11,9 +11,14 @@
 		"blog": "https://blog.naver.com/PostList.nhn?blogId=altmshfkgudtjr",
 		"velog": "https://velog.io/@altmshfkgudtjr",
 		"instagram": "https://www.instagram.com/brother_rock_/",
-		"email": "mailto:altmshfkgudtjr@naver.com"
+		"email": "mailto:altmgudtjr@gmail.com"
 	},
 	"experience": [
+		{
+			"date": "2020.12 ~ 2020.12",
+			"place": "KISTI-세종대학교 빅데이터·AI 겨울학교",
+			"content": "KISTI-세종대학교 주관 빅데이터·AI 겨울학교 과정 수료"
+		},
 		{
 			"date": "2020.07 ~ 2020.09",
 			"place": "AI 양재R&D혁신허브 인공지능 캠프",
@@ -23,6 +28,11 @@
 			"date": "2020.04 ~ 2020.08",
 			"place": "Large scale social media data mining lab",
 			"content": "세종대학교 데이터사이언스학과 부속 연구실 학사 연구원"
+		},
+		{
+			"date": "2020.01 ~ 2020.01",
+			"place": "2020 세종창의인재스쿨",
+			"content": "세종대학교 창의인재스쿨 Python 조교로 활동"
 		}
 	],
 	"prizes": [

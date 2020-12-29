@@ -16,6 +16,10 @@ const Container = styled.div`
 	${media.small} {
 		padding: 0 1rem;
 	}
+
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		padding: 0 1rem;
+	}
 `;
 
 export default Wrapper

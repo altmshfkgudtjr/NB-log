@@ -26,6 +26,14 @@ const Container = styled.div`
 		border-bottom: 2px solid #f2f2f2;
 	}
 
+	@media screen and (max-height: 600px) and (orientation: landscape) {
+		height: 56px;
+		padding: 0 1rem;
+		background-color: white;
+		padding-bottom: .5rem;
+		border-bottom: 2px solid #f2f2f2;
+	}
+
 	& > div {
 		display: flex;
 		align-items: flex-end;

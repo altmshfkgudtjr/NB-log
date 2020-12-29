@@ -4,6 +4,7 @@ import * as InfoJson from 'lib/data/info.json';
 import * as CommandJson from 'lib/data/command.json';
 import * as ProjectsJson from 'lib/data/projects.json';
 import * as SentencesJson from 'lib/data/sentences.json';
+import * as MakingJson from 'lib/data/making.json';
 
 /*
 	Thunk Actions
@@ -28,6 +29,11 @@ export const getSentences = () => dispatch => {
 	dispatch(setSentences(data));
 }
 
+export const getMaking = () => dispatch => {
+	const data = MakingJson.default;
+	dispatch(setMaking(data));
+}
+
 
 /*
 	Actions
@@ -36,11 +42,13 @@ const SET_INFO = 'json/SET_INFO';
 const SET_COMMAND = 'json/SET_COMMAND';
 const SET_PROJECTS = 'json/SET_PROJECTS';
 const SET_SENTENCES = 'json/SET_SENTENCES';
+const SET_MAKING = 'json/SET_MAKING';
 
 export const setInfo = (data) => ({ type: SET_INFO, payload: data });
 export const setCommand = (data) => ({ type: SET_COMMAND, payload: data });
 export const setProjects = (data) => ({ type: SET_PROJECTS, payload: data });
 export const setSentences = (data) => ({ type: SET_SENTENCES, payload: data });
+export const setMaking = (data) => ({ type: SET_MAKING, payload: data });
 
 
 /*
@@ -48,8 +56,7 @@ export const setSentences = (data) => ({ type: SET_SENTENCES, payload: data });
 */
 const initialState = {
 	sentences: {
-		concept: [],
-		introduce: []
+		concept: []
 	},
 	projects: [],
 	info: {
@@ -61,7 +68,8 @@ const initialState = {
 		skills: [],
 		education: []
 	},
-	command: {}
+	command: {},
+	making: []
 };
 
 
@@ -94,7 +102,11 @@ function json(state = initialState, action) {
 		case SET_SENTENCES:
 			return produce(state, draft => {
 				draft.sentences.concept = action.payload.concept;
-				draft.sentences.introduce = action.payload.introduce;
+			});
+
+		case SET_MAKING:
+			return produce(state, draft => {
+				draft.making = action.payload.content;
 			});
 
 		default:

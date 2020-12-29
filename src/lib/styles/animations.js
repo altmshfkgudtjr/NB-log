@@ -138,6 +138,11 @@ const zoomOut = keyframes`
 	100% { opacity: 0; transform: scale(.5, .5); }
 `;
 
+const zoomInHexaMobile = keyframes`
+	0% { opacity: 0; transform: scale(.5, .5); }
+	100% { opacity: 1; transform: scale(.8, .8); }
+`;
+
 const tooltip = keyframes`
 	0% { opacity: 0; }
 	40% { opacity: 0; }
@@ -183,6 +188,7 @@ const animations = {
 	fadeOutBottom,
 	zoomIn,
 	zoomOut,
+	zoomInHexaMobile,
 	tooltip,
 	loadingOn,
 	loadingOff,

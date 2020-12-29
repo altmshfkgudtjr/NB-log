@@ -9,6 +9,7 @@ const Content = styled.div`
 	text-align: center;
 	font-size: 18px;
 	font-weight: 100;
+	margin-bottom: 1rem;
 `;
 
 export default Title

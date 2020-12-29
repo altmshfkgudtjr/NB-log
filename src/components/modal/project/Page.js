@@ -10,9 +10,8 @@ const Page = ({ onMouseDown, off, children }) => {
 
 const Container = styled.div`
 	width: 718px;
-	height: 1016px;
 	max-width: 100%;
-	max-height: 100%;
+	min-height: 100%;
 	box-sizing: border-box;
 	padding: 2rem;
 	background-color: #fff;
@@ -22,6 +21,12 @@ const Container = styled.div`
 		? css`animation: .6s ${animations.fadeOutBottom}`
 		: css`animation: .6s ${animations.fadeInBottom}`
 	};
+
+	@media screen and (max-width: 800px) {
+		border-radius: 12px 12px 0 0;
+		margin: 4rem auto 0 auto;
+		padding: 1rem;
+	}
 `;
 
 export default Page

@@ -43,7 +43,7 @@ const fadeOutCenter = keyframes`
 const fadeInTop = keyframes`
 	0% {
 		opacity: 0;
-		transform: translateY(-20px);
+		transform: translateY(-40px);
 	}
 	100% {
 		opacity: 1;
@@ -58,14 +58,14 @@ const fadeOutTop = keyframes`
 	}
 	100% {
 		opacity: 0;
-		transform: translateY(-20px);
+		transform: translateY(-40px);
 	}
 `;
 
 const fadeInBottom = keyframes`
 	0% {
 		opacity: 0;
-		transform: translateY(20px);
+		transform: translateY(40px);
 	}
 	100% {
 		opacity: 1;
@@ -80,14 +80,14 @@ const fadeOutBottom = keyframes`
 	}
 	100% {
 		opacity: 0;
-		transform: translateY(20px);
+		transform: translateY(40px);
 	}
 `;
 
 const fadeInRight = keyframes`
 	0% {
 		opacity: 0;
-		transform: translateX(20px);
+		transform: translateX(40px);
 	}
 	100% {
 		opacity: 1;
@@ -102,14 +102,14 @@ const fadeOutRight = keyframes`
 	}
 	100% {
 		opacity: 0;
-		transform: translateX(20px);
+		transform: translateX(40px);
 	}
 `;
 
 const fadeInLeft = keyframes`
 	0% {
 		opacity: 0;
-		transform: translateX(-20px);
+		transform: translateX(-40px);
 	}
 	100% {
 		opacity: 1;
@@ -124,7 +124,7 @@ const fadeOutLeft = keyframes`
 	}
 	100% {
 		opacity: 0;
-		transform: translateX(-20px);
+		transform: translateX(-40px);
 	}
 `;
 

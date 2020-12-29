@@ -10,16 +10,15 @@
 			"url": "https://github.com/altmshfkgudtjr/QOJ_client",
 			"color": "#0C88A0",
 			"post": [
-				[
-					{
-						"type": "text",
-						"content": "CONTENT"
-					},
-					{
-						"type": "image",
-						"content": "./public/iamges/IMAGE_URL.png"
-					}
-				]
+				{
+					"type": "text",
+					"content": "내용"
+				},
+				{
+					"type": "image",
+					"content": "",
+					"size": ""
+				}
 			]
 		},
 		{
@@ -32,16 +31,15 @@
 			"url": "https://github.com/altmshfkgudtjr/NB_Portfolio_2020",
 			"color": "#707070",
 			"post": [
-				[
-					{
-						"type": "text",
-						"content": "CONTENT"
-					},
-					{
-						"type": "image",
-						"content": "./public/iamges/IMAGE_URL.png"
-					}
-				]
+				{
+					"type": "text",
+					"content": "내용"
+				},
+				{
+					"type": "image",
+					"content": "",
+					"size": ""
+				}
 			]
 		},
 		{
@@ -54,16 +52,24 @@
 			"url": "https://github.com/altmshfkgudtjr/SIGNUS_client",
 			"color": "#43A483",
 			"post": [
-				[
-					{
-						"type": "text",
-						"content": "CONTENT"
-					},
-					{
-						"type": "image",
-						"content": "./public/iamges/IMAGE_URL.png"
-					}
-				]
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103264231-6fff2100-49ed-11eb-9e8b-0bc93ec9c336.png",
+					"size": "718×467"
+				},
+				{
+					"type": "text",
+					"content": "인터넷 플랫폼의 접근성이 점점 좋아지면서, 사용자가 필요로 하는 수 많은 정보는 상당히 많은 사이트에서 게시되고 있다. 하지만 이로 인해서 원하는 정보를 탐색하는 과정은 오히려 점점 더 불편해지고 있다. 그래서 만든 프로젝트다. SIGNUS는 나와 같은 20대 청년들에게 관심있는 정보들을 지속적으로 수집 및 통합, 인공지능을 이용해서 사용자에게 맞춤 정보를 추천해준다."
+				},
+				{
+					"type": "text",
+					"content": "이 프로젝트에서는 기존의 유사 서비스인 SOOJLE을 토대로, UI/UX를 개선시키는 작업을 진행하였다. 기존 순수 Javascript로 제작한 것과 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였다."
+				},
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103264234-7097b780-49ed-11eb-99f0-18f2a7af5f60.png",
+					"size": "718×479"
+				}
 			]
 		},
 		{
@@ -76,16 +82,15 @@
 			"url": "https://github.com/altmshfkgudtjr/SOOJLE_FRONT",
 			"color": "#CC372B",
 			"post": [
-				[
-					{
-						"type": "text",
-						"content": "CONTENT"
-					},
-					{
-						"type": "image",
-						"content": "./public/iamges/IMAGE_URL.png"
-					}
-				]
+				{
+					"type": "text",
+					"content": "내용"
+				},
+				{
+					"type": "image",
+					"content": "",
+					"size": ""
+				}
 			]
 		},
 		{
@@ -98,16 +103,15 @@
 			"url": "https://github.com/altmshfkgudtjr/MODAKBUL_INTEGRATE",
 			"color": "#455484",
 			"post": [
-				[
-					{
-						"type": "text",
-						"content": "CONTENT"
-					},
-					{
-						"type": "image",
-						"content": "./public/iamges/IMAGE_URL.png"
-					}
-				]
+				{
+					"type": "text",
+					"content": "내용"
+				},
+				{
+					"type": "image",
+					"content": "",
+					"size": ""
+				}
 			]
 		},
 		{
@@ -120,16 +124,29 @@
 			"url": "https://github.com/altmshfkgudtjr/ELEposition",
 			"color": "#CCB12B",
 			"post": [
-				[
-					{
-						"type": "text",
-						"content": "CONTENT"
-					},
-					{
-						"type": "image",
-						"content": "./public/iamges/IMAGE_URL.png"
-					}
-				]
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103264228-6e355d80-49ed-11eb-8eab-7ded7ebb94c4.png",
+					"size": "719×467"
+				},
+				{
+					"type": "text",
+					"content": "ELEposition(Element position)은 Apple의 Big Sur OS로부터 영감을 얻은 프로젝트다. 특정 DOM Element의 절대 좌표를 구해야하는 작업을 진행하던 와중, Background filter 효과를 씌운 여러 개의 BOX가 랜덤적으로 화면에 나타나면 예쁠 것 같다는 생각이 들었다. 그 결과, 여러 색이 겹쳐서 또 다른 색을 만들어 낸다는 것, Box 뒤 쪽에 있는 다른 Box들이 blur 효과로 퍼져서 흐리게 보이는 것이 합쳐져서 새로운 작품이 탄생하였다."
+				},
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103264229-6f668a80-49ed-11eb-942f-2b844cd496f1.png",
+					"size": "327×271"
+				},
+				{
+					"type": "text",
+					"content": "하지만 여기서 background 색상이 몇 개 없다면, 자칫하다간 단조로운 느낌이 들 것 같아서 많고 다양한 색을 알아보았고, 밝은 Color가 중심이 되도록 제작하였다. 또한, 본 프로젝트는 \"의도치않은 창조\" 라는 느낌을 바탕으로 제작하였기 때문에 Box Dragging 할 수 있는 기능은 몇 번의 고민 끝에 제외하기로 결정하였고, 배경화면 또한 물감이 쏟아지는 느낌의 사진으로 선택하여 주제에 알맞는 느낌을 주었다."
+				},
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103264230-6fff2100-49ed-11eb-9fc6-3a0c8583e46a.png",
+					"size": "448×672"
+				}
 			]
 		}
 	]

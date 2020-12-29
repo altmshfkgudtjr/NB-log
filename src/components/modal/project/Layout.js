@@ -16,6 +16,22 @@ const Container = styled.div`
 	z-index: 10;
 	overflow-y: auto;
 	${styles.scrollbar(10)};
+
+	@media screen and (max-width: 800px) {
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #ddd;
+			border-radius: 10px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background: #ccc;
+		}
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+	}
 `;
 
 export default Layout

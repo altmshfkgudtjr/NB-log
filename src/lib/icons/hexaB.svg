@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="402.232" height="350.464" viewBox="0 0 402.232 350.464">
+  <g id="그룹_121" data-name="그룹 121" transform="translate(4011 -3763.768)">
+    <g id="그룹_113" data-name="그룹 113" transform="translate(547)">
+      <g id="다각형_8" data-name="다각형 8" transform="translate(-4558 3766)" fill="none">
+        <path d="M300,0,400,172.881,300,345.763H100L0,172.881,100,0Z" stroke="none"/>
+        <path d="M 100.5768432617188 1 L 1.15521240234375 172.8813171386719 L 100.5767822265625 344.7627258300781 L 299.4231567382813 344.7627258300781 L 398.8447875976563 172.8813629150391 L 299.4231567382813 1 L 100.5768432617188 1 M 100.0000610351563 0 L 299.9999389648438 0 L 400 172.8813629150391 L 299.9999389648438 345.7627258300781 L 100 345.7627258300781 L 0 172.8813171386719 L 100.0000610351563 0 Z" stroke="none" fill="#aaa"/>
+      </g>
+      <line id="선_7" data-name="선 7" x2="199" y2="345" transform="translate(-4457.5 3766.5)" fill="none" stroke="#aaa" stroke-width="1"/>
+      <line id="선_8" data-name="선 8" y1="345" x2="199" transform="translate(-4457.5 3766.5)" fill="none" stroke="#aaa" stroke-width="1"/>
+      <line id="선_9" data-name="선 9" x2="398" transform="translate(-4557 3939)" fill="none" stroke="#aaa" stroke-width="1"/>
+    </g>
+    <g id="그룹_118" data-name="그룹 118">
+      <line id="선_14" data-name="선 14" x2="199" y2="345" transform="translate(-3910.5 3766.5)" fill="none" stroke="#F9D904" stroke-linecap="round" stroke-width="4"/>
+      <line id="선_15" data-name="선 15" x1="99" y2="172" transform="translate(-3810.5 3766.5)" fill="none" stroke="#F9D904" stroke-linecap="round" stroke-width="4"/>
+      <line id="선_16" data-name="선 16" x1="100" y2="173" transform="translate(-3711.5 3938.5)" fill="none" stroke="#F9D904" stroke-linecap="round" stroke-width="4"/>
+      <line id="선_17" data-name="선 17" x2="199" transform="translate(-3810.5 3938.5)" fill="none" stroke="#F9D904" stroke-linecap="round" stroke-width="4"/>
+      <line id="선_18" data-name="선 18" x2="199" transform="translate(-3910.5 3766.5)" fill="none" stroke="#F9D904" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

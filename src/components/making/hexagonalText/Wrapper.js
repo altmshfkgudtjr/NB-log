@@ -8,22 +8,17 @@ const Wrapper = ({ children }) => {
 }
 
 const Container = styled.div`
+	width: 80vw;
+	max-width: 1000px;
+	margin: auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: calc(100vh - 150px - 64px - 120px);
-
-	& > svg {
-		margin-bottom: 4rem;
-	}
+	justify-content: space-between;
+	overflow-x: auto;
+	margin-bottom: 2rem;
 
 	${media.small} {
-		height: calc(100vh - 126px - 56px - 80px);
-
-		& > svg {
-			margin-bottom: 2rem;
-		}
+		width: 100vw;
 	}
 `;
 

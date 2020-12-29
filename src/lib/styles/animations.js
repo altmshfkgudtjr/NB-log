@@ -163,8 +163,9 @@ const hexagonalSpin = keyframes`
 `;
 
 const hexagonalDraw = keyframes`
-	from { stroke-dashoffset: 272; }
-	to { stroke-dashoffset: 0; }
+	0% { stroke-dashoffset: 272; }
+	80% { stroke-dashoffset: 0; fill: rgba(0,0,0,0); }
+	100% { stroke-dashoffset: 0; fill: rgba(0,0,0,.8); }
 `;
 
 const animations = {

@@ -111,6 +111,10 @@
 			"Node.js - Express",
 			"Python - Flask",
 			"Database - MongoDB, MySQL"
+		],
+		"Etc": [
+			"MacOS, Windows, Linux(Ubuntu)",
+			"Notion, Slack, Trello, Jandi"
 		]
 	},
 	"education": [

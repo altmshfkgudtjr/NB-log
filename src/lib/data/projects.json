@@ -7,17 +7,34 @@
 			"position": ["Front-end", "Database design"],
 			"date": ["MAY", "2020"],
 			"collaborator": ["NB", "X", "837477"],
-			"url": "https://github.com/altmshfkgudtjr/QOJ_client",
+			"url": "https://www.notion.so/QOJ-398709cc3e6c4f18ae081c1ea8d9c88b",
 			"color": "#0C88A0",
 			"post": [
 				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103370717-dc267580-4b10-11eb-8399-96c411326f7f.png",
+					"size": "1664×836"
+				},
+				{
 					"type": "text",
-					"content": "내용"
+					"content": "QOJ는 Query + Online Judge System의 합성어로, 온라인으로 SQL 실행 및 문제를 풀어볼 수 있는 플랫폼입니다. 본 프로젝트는 세종대학교를 다니면서 알고리즘 문제에 대한 OJ 시스템은 존재하는 반면, SQL문에 대한 OJ 시스템이 부재하여 직접 만들어보게 되었습니다."
 				},
 				{
 					"type": "image",
-					"content": "",
-					"size": ""
+					"content": "https://user-images.githubusercontent.com/47492535/103364588-8a2a2380-4b01-11eb-959f-c602b7003af4.png",
+					"size": "824×595"
+				},
+				{
+					"type": "text",
+					"content": "위 사진처럼, 실제 문제를 푸는 공간은 3구간으로 나뉘어지는 레이아웃을 선택하였습니다. 이 때 좌우 레이아웃은 조절이 가능하도록 만들어, 사용자의 편의성을 증가시켰습니다. 또한 SQL 인젝션에 대한 공격 방지 및 데이터베이스의 무결성을 보장하기 위해서 MySQL의 트랜잭션 기능을 활용하는 등의 여러가지를 고려하여 제작하였습니다."
+				},
+				{
+					"type": "text",
+					"content": "이번 단계에서는 아쉽게도 SELECT문 밖에 지원하지 않지만, Docker를 통해서 사용자가 쿼리문을 실행시킬 때마다 환경이 구축된 컨테이너에서 테스트를 실행시킨다면, Insert 및 Update문도 지원할 수 있을 것이라 예상이 들었습니다. 추후에 이 프로젝트가 재개된다면 이 아이디어를 적용시킬 예정입니다."
+				},
+				{
+					"type": "text",
+					"content": ""
 				}
 			]
 		},
@@ -32,13 +49,22 @@
 			"color": "#707070",
 			"post": [
 				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103364593-8bf3e700-4b01-11eb-9e91-f4a33d0d2310.png",
+					"size": "800×450"
+				},
+				{
 					"type": "text",
-					"content": "내용"
+					"content": "NB#log 사이트의 첫 번째 배포판입니다. STUDIO는 제가 Vue.js를 새롭게 공부하고자 시작한 프로젝트입니다. Back-end는 Node.js의 Express를 호스팅 서버는 Heroku를 사용하여 배포하였습니다. 간단한 프로젝트를 기획부터 배포까지 처리해보면서, 다시 한번 전반적인 개발 프로세스를 정리 할 수 있는 경험이 되었습니다."
 				},
 				{
 					"type": "image",
-					"content": "",
-					"size": ""
+					"content": "https://user-images.githubusercontent.com/47492535/103364592-8b5b5080-4b01-11eb-94dc-372d1d2da85e.png",
+					"size": "800×400"
+				},
+				{
+					"type": "text",
+					"content": "NB#log에서 '#' 은 이 프로젝트를 진행하면서 탄생하였습니다. 보통 '#(해시태그)' 는 사람을 태그하기 위해서 사용됩니다. 이와 같이, 본 프로젝트에서는 해시태그는 개발자와 사용자의 Connection의 의미를 담고 있으며, 사용자와의 소통을 잘 할 수 있는 개발자가 되기 위해서 프로젝트 전반적으로 '#' 을 사용하였습니다."
 				}
 			]
 		},
@@ -59,11 +85,11 @@
 				},
 				{
 					"type": "text",
-					"content": "인터넷 플랫폼의 접근성이 점점 좋아지면서, 사용자가 필요로 하는 수 많은 정보는 상당히 많은 사이트에서 게시되고 있다. 하지만 이로 인해서 원하는 정보를 탐색하는 과정은 오히려 점점 더 불편해지고 있다. 그래서 만든 프로젝트다. SIGNUS는 나와 같은 20대 청년들에게 관심있는 정보들을 지속적으로 수집 및 통합, 인공지능을 이용해서 사용자에게 맞춤 정보를 추천해준다."
+					"content": "인터넷 플랫폼의 접근성이 점점 좋아지면서, 사용자가 필요로 하는 수 많은 정보는 상당히 많은 사이트에서 게시되고 있습니다. 하지만 이로 인해서 원하는 정보를 탐색하는 과정은 오히려 점점 더 불편해지고 있습니다. 그렇게 시작된 프로젝트 SIGNUS는 나와 같은 20대 청년들에게 관심있는 정보들을 지속적으로 수집 및 통합, 인공지능을 이용해서 사용자에게 맞춤 정보를 추천해줍니다."
 				},
 				{
 					"type": "text",
-					"content": "이 프로젝트에서는 기존의 유사 서비스인 SOOJLE을 토대로, UI/UX를 개선시키는 작업을 진행하였다. 기존 순수 Javascript로 제작한 것과 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였다."
+					"content": "이 프로젝트에서는 기존의 유사 서비스인 SOOJLE을 토대로, UI/UX를 개선시키는 작업을 진행하였습니다. 기존 순수 Javascript로 제작한 것과 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였습니다."
 				},
 				{
 					"type": "image",
@@ -83,13 +109,22 @@
 			"color": "#CC372B",
 			"post": [
 				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103364594-8bf3e700-4b01-11eb-9161-a6d5a6e6ff79.png",
+					"size": "800×572"
+				},
+				{
 					"type": "text",
-					"content": "내용"
+					"content": "세종대학교에서는 학생에게 필요한 정보를 여러 사이트에 공지하고 있습니다. 하지만 시간이 갈 수록 학생들이 필요한 정보들이 너무 퍼져있어 찾기 힘들다는 피드백을 받게 되었고, SOOJLE 프로젝트가 시작되었습니다."
+				},
+				{
+					"type": "text",
+					"content": "본 프로젝트는 세종대학교 구성원이라는 타겟을 선정하여, 해당 구성원들에게 필요한 모든 정보를 A.I를 통해서 체계화 시켰습니다. 또한 A.I를 사용한 사용자 맞춤 추천 시스템을 통해서 빠르고 쉽게 나에게 필요한 정보를 받아 볼 수 있도록 제작하였습니다."
 				},
 				{
 					"type": "image",
-					"content": "",
-					"size": ""
+					"content": "https://user-images.githubusercontent.com/47492535/103369766-5acde380-4b0e-11eb-86d2-abb7da8f66cf.png",
+					"size": "800×744"
 				}
 			]
 		},
@@ -104,13 +139,32 @@
 			"color": "#455484",
 			"post": [
 				{
-					"type": "text",
-					"content": "내용"
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103364596-8c8c7d80-4b01-11eb-8ab7-d334f1a188ec.png",
+					"size": "800×370"
 				},
 				{
 					"type": "image",
-					"content": "",
-					"size": ""
+					"content": "https://user-images.githubusercontent.com/47492535/103364598-8d251400-4b01-11eb-9590-b6955a5ddeb3.png",
+					"size": "800×378"
+				},
+				{
+					"type": "text",
+					"content": "본 프로젝트는 소프트웨어융합대학 제 3대 학생회 번영에서 주최하는 공모전으로서, 세종대학교 소프트웨어 융합 대학 홈페이지 개발의 결과물입니다. 본 프로젝트에서는 기존의 카테고리식 게시판 시스템을 벗어나 Tagging 기반의 구조로 설계하였습니다. 이 구조를 통해서 자동으로 게시글이 게시판으로 다중 분류가 되어지는 시스템을 가졌습니다."
+				},
+				{
+					"type": "text",
+					"content": "또한 대학 홈페이지로서 공지, 투표 및 커뮤니티 기능이 도입되어있어, 학생회와 학우 간의 소통이 원활할 수 있도록 프로젝트를 진행하였습니다. 또한 다크 모드 기능을 추가하여 사용자 취향에 맞도록 서비스를 이용할 수 있도록 제작하였습니다."
+				},
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103364600-8d251400-4b01-11eb-97fa-039adb28e8bd.png",
+					"size": "800×564"
+				},
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103371215-3ecc4100-4b12-11eb-80b5-92151b5f3732.png",
+					"size": "400×600"
 				}
 			]
 		},
@@ -131,7 +185,7 @@
 				},
 				{
 					"type": "text",
-					"content": "ELEposition(Element position)은 Apple의 Big Sur OS로부터 영감을 얻은 프로젝트다. 특정 DOM Element의 절대 좌표를 구해야하는 작업을 진행하던 와중, Background filter 효과를 씌운 여러 개의 BOX가 랜덤적으로 화면에 나타나면 예쁠 것 같다는 생각이 들었다. 그 결과, 여러 색이 겹쳐서 또 다른 색을 만들어 낸다는 것, Box 뒤 쪽에 있는 다른 Box들이 blur 효과로 퍼져서 흐리게 보이는 것이 합쳐져서 새로운 작품이 탄생하였다."
+					"content": "ELEposition(Element position)은 Apple의 Big Sur OS로부터 영감을 얻은 프로젝트입니다. 특정 DOM Element의 절대 좌표를 구해야하는 작업을 진행하던 와중, Background filter 효과를 씌운 여러 개의 BOX가 랜덤적으로 화면에 나타나면 예쁠 것 같다는 생각이 들었습니다. 그 결과, 여러 색이 겹쳐서 또 다른 색을 만들어 낸다는 것, Box 뒤 쪽에 있는 다른 Box들이 blur 효과로 퍼져서 흐리게 보이는 것이 합쳐져서 새로운 작품이 탄생하게 되었습니다."
 				},
 				{
 					"type": "image",
@@ -140,12 +194,37 @@
 				},
 				{
 					"type": "text",
-					"content": "하지만 여기서 background 색상이 몇 개 없다면, 자칫하다간 단조로운 느낌이 들 것 같아서 많고 다양한 색을 알아보았고, 밝은 Color가 중심이 되도록 제작하였다. 또한, 본 프로젝트는 \"의도치않은 창조\" 라는 느낌을 바탕으로 제작하였기 때문에 Box Dragging 할 수 있는 기능은 몇 번의 고민 끝에 제외하기로 결정하였고, 배경화면 또한 물감이 쏟아지는 느낌의 사진으로 선택하여 주제에 알맞는 느낌을 주었다."
+					"content": "하지만 여기서 background 색상이 몇 개 없다면, 자칫하다간 단조로운 느낌이 들 것 같아서, 많고 다양한 색을 알아보았고, 밝은 Color가 중심이 되도록 최종 선택하여 제작하였습니다. 또한, 본 프로젝트는 \"의도치않은 창조\" 라는 느낌을 바탕으로 제작하였기 때문에 Box Dragging 할 수 있는 기능은 몇 번의 고민 끝에 제외하기로 결정하였고, 배경화면 또한 물감이 쏟아지는 사진으로 선택하여 해당 느낌이 사용자에게 전달될 수 있도록 제작하였습니다."
 				},
 				{
 					"type": "image",
 					"content": "https://user-images.githubusercontent.com/47492535/103264230-6fff2100-49ed-11eb-9fc6-3a0c8583e46a.png",
 					"size": "448×672"
+				}
+			]
+		},
+		{
+			"title": "SEJABO",
+			"img": "https://user-images.githubusercontent.com/47492535/103371704-7f788a00-4b13-11eb-97a5-968b1526f047.png",
+			"info": ["Sejong University Daejabo"],
+			"position": ["Front-end"],
+			"date": ["JUNE", "2019"],
+			"collaborator": ["Team IML"],
+			"url": "https://github.com/altmshfkgudtjr/SEJABO",
+			"color": "#9764B3",
+			"post": [
+				{
+					"type": "image",
+					"content": "https://user-images.githubusercontent.com/47492535/103371704-7f788a00-4b13-11eb-97a5-968b1526f047.png",
+					"size": "700×393"
+				},
+				{
+					"type": "text",
+					"content": "세자보란, 세종대학교 + 대자보의 합성어로 세종대학교 재학생들을 위한 홍보용 SNS 서비스입니다. 대학교 대자보의 기존 오프라인 포스터 형식의 문제점을 파악하여 웹으로 구현, 포스터 게시물들의 자동화, 홍보에 맞는 시각성을 가지는 UI/UX을 포괄하는 시스템을 구현하였습니다."
+				},
+				{
+					"type": "text",
+					"content": "해당 프로젝트는 제가 Front-end 포지션을 처음 맡아본 프로젝트로서 Modal이라는 생소한 개념을 마주친 것이 제일 기억에 남는 부분입니다. 그렇게 SEJABO를 완성시키고 나서부터 본격적으로 Front-end에 흥미를 가지기 시작되었습니다."
 				}
 			]
 		}

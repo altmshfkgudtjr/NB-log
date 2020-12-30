@@ -10,21 +10,23 @@ const PageUrl = ({ url, color }) => {
 }
 
 const Content = styled.a`
+	display: block;
+	color: ${props => props.color};
+	word-break: break-all;
+	margin-bottom: 1rem;
+
+	&:visited {
 		color: ${props => props.color};
-		word-break: break-all;
+	}
 
-		&:visited {
-			color: ${props => props.color};
-		}
+	&:hover {
+		text-decoration: underline;
+		text-underline-position: under;
+	}
 
-		&:hover {
-			text-decoration: underline;
-			text-underline-position: under;
-		}
-
-		${media.small} {
-			font-size: 14px;
-		}
+	${media.small} {
+		font-size: 14px;
+	}
 `;
 
 export default PageUrl

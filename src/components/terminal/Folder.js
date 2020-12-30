@@ -23,11 +23,14 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-	display: ${props => props.type === 'FORLDER' || props.show
+	display: ${props => props.type === 'FOLDER' || props.show
 		? 'block'
 		: 'none'
 	};
-	color: ${palette.blue4};
+	color: ${props => props.type === 'FOLDER'
+		? palette.blue4
+		: palette.orange4
+	};
 	margin-right: 2rem;
 `;
 

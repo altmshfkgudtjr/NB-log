@@ -45,18 +45,18 @@ const Container = styled.div`
 const Content = styled.div`
 	display: grid;
 	grid-template-rows: repeat(2, 360px);
-	grid-template-columns: repeat(7, 360px);
+	grid-template-columns: ${props => `repeat(${props.projectNum + 1}, 360px)`};
 	grid-auto-flow: column;
 	padding: 0 4rem;
 
 	@media screen and (min-width: 3000px) {
 		grid-template-rows: repeat(2, 500px);
-		grid-template-columns: repeat(7, 500px);
+		grid-template-columns: ${props => `repeat(${props.projectNum + 1}, 500px)`};
 	}
 
 	@media screen and (max-width: 1100px) and (orientation: landscape) {
 		grid-template-rows: repeat(2, 300px);
-		grid-template-columns: repeat(7, 300px);
+		grid-template-columns: ${props => `repeat(${props.projectNum + 1}, 300px)`};
 	}
 
 	${media.small} {
@@ -70,7 +70,7 @@ const Content = styled.div`
 	@media screen and (max-height: 600px) and (orientation: landscape) {
 		display: grid;
 		grid-template-rows: repeat(1, 240px);
-		grid-template-columns: repeat(12, 240px);
+		grid-template-columns: ${props => `repeat(${props.projectNum * 2}, 240px)`};
 		margin-top: 3rem;
 	}
 `;

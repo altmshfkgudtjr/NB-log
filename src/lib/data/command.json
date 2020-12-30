@@ -7,23 +7,23 @@
 	},
 	"ls": [
 		{
-			"type": "FORLDER",
+			"type": "FOLDER",
 			"content": "concept"
 		},
 		{
-			"type": "FORLDER",
+			"type": "FOLDER",
 			"content": "main"
 		},
 		{
-			"type": "FORLDER",
+			"type": "FOLDER",
 			"content": "profile"
 		},
 		{
-			"type": "FORLDER",
+			"type": "FOLDER",
 			"content": "project"
 		},
 		{
-			"type": "FORLDER",
+			"type": "FOLDER",
 			"content": "making"
 		},
 		{

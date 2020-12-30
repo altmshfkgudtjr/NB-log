@@ -14,6 +14,7 @@ export const transition = ()=>`
 export const scrollbar = (width=10) => `
 	&::-webkit-scrollbar {
 		width: ${width}px;
+		height: ${width}px;
 		background: transparent;
 	}
 	&::-webkit-scrollbar-thumb {

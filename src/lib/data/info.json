@@ -5,7 +5,7 @@
 		"金亨錫",
 		"NB"
 	],
-	"introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 프론트엔드로 개발을 하고 있으며, 사용자를 즐겁게 하는 창의적인 작업을 하는 모든 것들을 즐깁니다. 또한, 지금보다 더 나은 결과를 위해서 새로운 것을 배우는 것을 마다하지 않으며, 항상 사용자에게 최적의 경험을 전달해주기 위해서 노력하고 있습니다. 개발을 한다는 것은 그 결과물을 통해서 사용자와 개발자를 연결해주는 과정이라고 생각합니다. 그렇기에 저는 그 흐름이 원활하게 진행될 수 있도록 여러 방면으로 항상 고민하며, 개발하고 있습니다.",
+	"introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 프론트엔드 개발을 하고 있으며, 사용자를 즐겁게 하는 창의적인 작업을 하는 모든 것들을 즐깁니다. 또한, 지금보다 더 나은 결과를 위해서 새로운 것을 배우는 것을 마다하지 않으며, 항상 사용자에게 최적의 경험을 전달해주기 위해서 노력하고 있습니다.",
 	"url": {
 		"github": "https://github.com/altmshfkgudtjr",
 		"blog": "https://blog.naver.com/PostList.nhn?blogId=altmshfkgudtjr",
@@ -105,7 +105,7 @@
 		"Frontend": [
 			"Typescript, React, Vue, Jquery, SCSS",
 			"Webpack, Rollup, Babel",
-			"Adobe Xd, Illustrator, Photoshop"
+			"Adobe XD, Illustrator, Photoshop"
 		],
 		"Backend": [
 			"Node.js - Express",

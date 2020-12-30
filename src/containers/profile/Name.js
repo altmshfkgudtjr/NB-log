@@ -12,10 +12,11 @@ const Name = () => {
 	const name_list = useSelector(state => state.json.info.name);
 	const [target, setTarget] = useState(0);
 	const [anime, setAinme] = useState(true);
+	let e = null;
 
 	const changingName = () => {
 		setAinme(false);
-		setTimeout(() => {
+		e = setTimeout(() => {
 			setAinme(true);
 			setTarget(
 				target + 1 === name_list.length
@@ -32,6 +33,12 @@ const Name = () => {
 	useEffect(() => {
 		dispatch(getInfo());
 	}, [dispatch]);
+
+	useEffect(() => {
+		return () => {	
+			clearTimeout(e);
+		};
+	}, [e]);
 
 	return (
 		<Wrapper>

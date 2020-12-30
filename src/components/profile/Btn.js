@@ -19,7 +19,9 @@ const Content = styled.a`
 	${styles.noselect};
 
 	${media.small} {
-		margin-right: 2rem;
+		width: 50%;
+		margin-right: 0;
+		margin-bottom: 1rem;
 	}
 
 	&:hover {

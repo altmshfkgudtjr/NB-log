@@ -1,77 +1,60 @@
 {
-	"whoami": "nb/nb",
-	"pwd": "https://altmshfkgudtjr.github.io/MAGAZINE/terminal",
+	"whoami": "nb/developer",
+	"pwd": "https://altmshfkgudtjr.github.io/terminal",
 	"exit": {
 		"type": "ACTION",
 		"content": "close"
 	},
 	"ls": [
 		{
-			"name": "concept",
 			"type": "FORLDER",
-			"content": "/concept"
+			"content": "concept"
 		},
 		{
-			"name": "contents",
 			"type": "FORLDER",
-			"content": "/contents"
+			"content": "main"
 		},
 		{
-			"name": "info",
 			"type": "FORLDER",
-			"content": "/info"
+			"content": "profile"
 		},
 		{
-			"name": "project",
 			"type": "FORLDER",
-			"content": "/project"
+			"content": "project"
 		},
 		{
-			"name": "exhibition",
 			"type": "FORLDER",
-			"content": "/exhibition"
+			"content": "making"
 		},
 		{
-			"name": "terminal",
-			"type": "FORLDER",
-			"content": "/terminal"
-		},
-		{
-			"name": "",
 			"type": "SECRET",
-			"content": ""
+			"content": "terminal"
 		}
 	],
 	"cd": [
 		{
-			"name": "concept",
 			"type": "URL",
-			"content": "/concept"
+			"content": "concept"
 		},
 		{
-			"name": "contents",
 			"type": "URL",
-			"content": "/contents"
+			"content": "main"
 		},
 		{
-			"name": "info",
 			"type": "URL",
-			"content": "/info"
+			"content": "profile"
 		},
 		{
-			"name": "project",
 			"type": "URL",
-			"content": "/project"
+			"content": "project"
 		},
 		{
-			"name": "exhibition",
 			"type": "URL",
-			"content": "/exhibition"
+			"content": "making"
 		},
 		{
-			"name": "terminal",
 			"type": "URL",
-			"content": "/terminal"
+			"content": "terminal"
 		}
 	]
 }

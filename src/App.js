@@ -6,6 +6,7 @@ import MainPage from 'pages/MainPage'
 import ProfilePage from 'pages/ProfilePage'
 import ProjectPage from 'pages/ProjectPage'
 import MakingPage from 'pages/MakingPage'
+import TerminalPage from 'pages/TerminalPage'
 import NotFound from 'pages/NotFound'
 // Containers
 import Header from 'containers/Header'
@@ -24,6 +25,7 @@ const App = () => {
 				<Route path="/profile" component={ProfilePage} exact />
 				<Route path="/project" component={ProjectPage} exact />
 				<Route path="/making" component={MakingPage} exact />
+				<Route path="/terminal" component={TerminalPage} exact />
 				<Route path="*" component={NotFound} status={404} />
 			</Switch>
 			<Modal />

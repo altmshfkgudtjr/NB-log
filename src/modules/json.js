@@ -1,37 +1,38 @@
 import produce from 'immer';
-// data
-import * as InfoJson from 'lib/data/info.json';
-import * as CommandJson from 'lib/data/command.json';
-import * as ProjectsJson from 'lib/data/projects.json';
-import * as SentencesJson from 'lib/data/sentences.json';
-import * as MakingJson from 'lib/data/making.json';
+// controllers
+import * as jsonAPI from 'controllers/json'
 
 /*
 	Thunk Actions
 */
 export const getInfo = () => dispatch => {
-	const data = InfoJson.default;
-	dispatch(setInfo(data));
+	return jsonAPI.getInfo().then(data => {
+		dispatch(setInfo(data));
+	});
 }
 
 export const getCommand = () => dispatch => {
-	const data = CommandJson.default;
-	dispatch(setCommand(data));
+	return jsonAPI.getCommand().then(data => {
+		dispatch(setCommand(data));
+	});
 }
 
 export const getProjects = () => dispatch => {
-	const data = ProjectsJson.default;
-	dispatch(setProjects(data));
+	return jsonAPI.getProjects().then(data => {
+		dispatch(setProjects(data));
+	});
 }
 
 export const getSentences = () => dispatch => {
-	const data = SentencesJson.default;
-	dispatch(setSentences(data));
+	return jsonAPI.getSentences().then(data => {
+		dispatch(setSentences(data));
+	});
 }
 
 export const getMaking = () => dispatch => {
-	const data = MakingJson.default;
-	dispatch(setMaking(data));
+	return jsonAPI.getMaking().then(data => {
+		dispatch(setMaking(data));
+	});
 }
 
 

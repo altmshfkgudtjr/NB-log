@@ -5,24 +5,42 @@ import * as styles from 'lib/styles/styles'
 import media from 'lib/styles/media'
 import palette from 'lib/styles/palette'
 
-const Btn = ({ message, href }) => {
-	return <Content href={href}
-									alt={message}
-									target="_blank_">{message}</Content>;
+const Btn = ({ message, href, isPrint=false }) => {
+	const showUrl = href.startsWith('mailto:') ? href.slice(7) : href;
+	return (
+		<Container isPrint={isPrint}>
+			<Content href={href}
+							 alt={message}
+							 target="_blank_"
+							 isPrint={isPrint}>{message}</Content>
+			{isPrint && <span> : {showUrl}</span>}
+		</Container>
+	);
 }
 
-const Content = styled.a`
-	padding: 0;
+const Container = styled.div`
 	margin-right: 3rem;
-	color: ${palette.blue3};
-	transition: .1s ${styles.transition};
-	${styles.noselect};
-
+	
 	${media.small} {
-		width: 50%;
+		width: ${props => props.isPrint
+			? '100%'
+			: '50%'
+		};
 		margin-right: 0;
 		margin-bottom: 1rem;
 	}
+`;
+
+const Content = styled.a`
+	display: inline-block;
+	padding: 0;
+	width: ${props => props.isPrint
+		? '80px;'
+		: 'auto'
+	};
+	color: ${palette.blue3};
+	transition: .1s ${styles.transition};
+	${styles.noselect};
 
 	&:hover {
 		color: ${palette.orange4};

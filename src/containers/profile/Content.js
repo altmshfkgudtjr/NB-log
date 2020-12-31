@@ -9,11 +9,13 @@ import InfoWrapper from 'components/profile/InfoWrapper'
 import InfoTitle from 'components/profile/InfoTitle'
 import InfoContent from 'components/profile/InfoContent'
 import SkillContent from 'components/profile/SkillContent'
+import KeywordWrapper from 'components/profile/KeywordWrapper'
+import Keyword from 'components/profile/Keyword'
 import Footer from 'components/profile/Footer'
 // modules
 import { getInfo } from 'modules/json'
 
-const Content = () => {
+const Content = ({ isPrint=false }) => {
 	const dispatch = useDispatch();
 	const info = useSelector(state => state.json.info);
 
@@ -21,10 +23,15 @@ const Content = () => {
 		dispatch(getInfo());
 	}, [dispatch]);
 
+	const KeywordList = info.keyword.map(
+		(data, idx) => <Keyword key={idx} message={data} />
+	);
+
 	const BtnList = Object.entries(info.url).map(
 		data => <Btn key={data[0]}
 								 message={data[0]}
-								 href={data[1]} />
+								 href={data[1]}
+								 isPrint={isPrint} />
 	);
 
 	const ExperienceList = info.experience.map(
@@ -57,6 +64,10 @@ const Content = () => {
 	return (<>
 		<Wrapper>
 			<Introduce message={info.introduce} />
+
+			<KeywordWrapper>
+				{KeywordList}
+			</KeywordWrapper>
 
 			<BtnWrapper>
 				{BtnList}

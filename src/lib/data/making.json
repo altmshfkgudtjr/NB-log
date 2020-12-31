@@ -13,8 +13,24 @@
 		],
 		[
 			{
+				"type": "image",
+				"content": "https://user-images.githubusercontent.com/47492535/103403088-56e3a500-4b92-11eb-9530-845477d22671.png"
+			},
+			{
 				"type": "text",
-				"content": ""
+				"keyword": "Connection",
+				"content": "사이트 시작에서 선이 흘러가는듯한 애니메이션은 제가 좋아하는 영화인 '너의 이름은'에서 영감을 받았습니다. 해당 영화에서는 모든 인연이 끈으로 이어지고, 매듭이 지어지는 표현을 하고 있는데, 저도 사용자와 개발자간의 연결을 Canvas에서 globalCompositeOperation효과를 이용하여 나타내었습니다."
+			}
+		],
+		[
+			{
+				"type": "image",
+				"content": "https://user-images.githubusercontent.com/47492535/103402371-43373f00-4b90-11eb-87be-737073c20ee0.png"
+			},
+			{
+				"type": "text",
+				"keyword": "CD Albums",
+				"content": "프로젝트 소개를 어떻게 진행할지 고민하다가, Yotube를 통해서 노래를 듣다가 아이디어가 떠올랐습니다. 프로젝트마다 가지고 있는 브랜드 컬러를 추출해 앨범 형태로 제작하였고, 마우스 올리면, CD가 돌아가는 효과를 주어 사용자가 직접 앨범에서 CD를 뽑아낸다는 경험을 가지도록 하였습니다."
 			}
 		]
 	]

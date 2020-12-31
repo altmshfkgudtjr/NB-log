@@ -4,10 +4,11 @@ import useInterval from 'lib/hooks/useInterval'
 // components
 import Wrapper from 'components/profile/Wrapper'
 import NameContent from 'components/profile/Name'
+import PrintNameContent from 'components/profile/PrintName'
 // modules
 import { getInfo } from 'modules/json'
 
-const Name = () => {
+const Name = ({ isPrint=false }) => {
 	const dispatch = useDispatch();
 	const name_list = useSelector(state => state.json.info.name);
 	const [target, setTarget] = useState(0);
@@ -35,14 +36,13 @@ const Name = () => {
 	}, [dispatch]);
 
 	useEffect(() => {
-		return () => {	
-			clearTimeout(e);
-		};
+		return () => clearTimeout(e);
 	}, [e]);
 
 	return (
 		<Wrapper>
-			<NameContent message={name_list[target]} show={anime} />
+			{!isPrint && <NameContent message={name_list[target]} show={anime} />}
+			{isPrint && <PrintNameContent message="김형석 (Hyungseok Kim) 프로필" />}
 		</Wrapper>
 	);
 }

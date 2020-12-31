@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.02 24.01">
+	<defs>
+		<style>.cls-4{fill:none;opacity:0.2;}.cls-5{fill:gray;}</style>
+	</defs>
+	<g id="레이어_2" data-name="레이어 2">
+		<g id="Icons">
+			<rect class="cls-4" width="24" height="24"/>
+			<path class="cls-5" d="M19,1V23H5V1H19m1-1H4V24H20V0Z"/>
+			<rect class="cls-5" x="0.52" y="9.51" width="23" height="5"/>
+			<path class="cls-5" d="M23,10v4H1V10H23m1-1H0v6H24V9Z"/>
+		</g>
+	</g>
+</svg>

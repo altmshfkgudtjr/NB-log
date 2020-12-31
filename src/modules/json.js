@@ -62,6 +62,7 @@ const initialState = {
 	info: {
 		name: [],
 		introduce: "",
+		keyword: [],
 		url: {},
 		experience: [],
 		prizes: [],
@@ -82,6 +83,7 @@ function json(state = initialState, action) {
 			return produce(state, draft => {
 				draft.info.name = action.payload.name;
 				draft.info.introduce = action.payload.introduce;
+				draft.info.keyword = action.payload.keyword;
 				draft.info.url = action.payload.url;
 				draft.info.experience = action.payload.experience;
 				draft.info.prizes = action.payload.prizes;

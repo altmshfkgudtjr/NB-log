@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 // component
-import { Clip, Hexagonal, Inner, Outer } from 'lib/icons'
+import { Clip, Hexagonal, Inner, Outer, Print } from 'lib/icons'
 // lib
 import * as styles from 'lib/styles/styles'
 import palette from 'lib/styles/palette'
@@ -11,7 +11,8 @@ const provideMap = {
 	clip: Clip,
 	hexagonal: Hexagonal,
 	inner: Inner,
-	outer: Outer
+	outer: Outer,
+	print: Print
 };
 
 const Btn = ({ icon, onClick }) => {

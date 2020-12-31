@@ -11,7 +11,7 @@ const Container = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin: 2rem 0 4rem 0;
+	margin: 2rem 0 3rem 0;
 
 	${media.small} {
 		justify-content: space-between;

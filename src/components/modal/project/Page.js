@@ -11,7 +11,6 @@ const Page = ({ onMouseDown, off, children }) => {
 const Container = styled.div`
 	width: 718px;
 	max-width: 100%;
-	min-height: 100%;
 	box-sizing: border-box;
 	padding: 2rem;
 	background-color: #fff;

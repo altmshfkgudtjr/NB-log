@@ -120,11 +120,6 @@
 				{
 					"type": "text",
 					"content": "본 프로젝트는 세종대학교 구성원이라는 타겟을 선정하여, 해당 구성원들에게 필요한 모든 정보를 A.I를 통해서 체계화 시켰습니다. 또한 A.I를 사용한 사용자 맞춤 추천 시스템을 통해서 빠르고 쉽게 나에게 필요한 정보를 받아 볼 수 있도록 제작하였습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103369766-5acde380-4b0e-11eb-86d2-abb7da8f66cf.png",
-					"size": "800×744"
 				}
 			]
 		},

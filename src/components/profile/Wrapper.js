@@ -13,6 +13,10 @@ const Container = styled.div`
 	margin: 4rem auto 0 auto;
 	box-sizing: border-box;
 
+	@media screen and (max-width: 1000px) {
+		padding: 0 2rem;
+	}
+
 	${media.small} {
 		padding: 0 1rem;
 	}

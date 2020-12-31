@@ -7,6 +7,7 @@ import ProfilePage from 'pages/ProfilePage'
 import ProjectPage from 'pages/ProjectPage'
 import MakingPage from 'pages/MakingPage'
 import TerminalPage from 'pages/TerminalPage'
+import PrintPage from 'pages/PrintPage'
 import NotFound from 'pages/NotFound'
 // Containers
 import Header from 'containers/Header'
@@ -17,6 +18,15 @@ import * as loadingTime from 'lib/loadingTime'
 
 const App = () => {
 	return (<>
+		<Switch>
+			<Route path="/print" component={PrintPage} exact />
+			<Route path="*" component={AppContent} />
+		</Switch>
+	</>);
+}
+
+const AppContent = () => {
+	return (
 		<PageLoading limitTime={loadingTime.page}>
 			<Header />
 			<Switch>
@@ -30,7 +40,7 @@ const App = () => {
 			</Switch>
 			<Modal />
 		</PageLoading>
-	</>);
+	);
 }
 
 export default App

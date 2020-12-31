@@ -10,7 +10,7 @@ const ContentWrapper = ({ children }) => {
 
 const Container = styled.div`
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 	margin-bottom: 2rem;
 	padding: 0 1rem;
 

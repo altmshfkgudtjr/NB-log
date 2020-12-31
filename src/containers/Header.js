@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router'
+import { useLocation } from 'react-router'
 import { useDispatch } from 'react-redux'
 // containers
 import Qrcode from 'containers/common/Qrcode'
@@ -10,7 +10,7 @@ import Btn from 'components/header/Btn'
 import { openPage } from 'modules/pageloading'
 
 const Header = () => {
-	const history = useHistory();
+	const location = useLocation();
 	const dispatch = useDispatch();
 	const [qrcode, setQrcode] = useState(false);
 	const [fullScreen, setFullScreen] = useState(0);
@@ -19,20 +19,19 @@ const Header = () => {
 		1: off
 		2: on
 	*/
+	const [isProfile, setIsProfile] = useState(false);
 
 	const onClickHexagonal = (e) => {
 		e.preventDefault();
 		
-		if (history.location.pathname === '/main') {
+		if (location.pathname === '/main') {
 			return;
 		} else {
 			dispatch(openPage('/main'));
 		}
 	}
 
-	const onOpenQrcode = () => {
-		setQrcode(true);
-	}
+	const onOpenQrcode = () => setQrcode(true);
 
 	const onCloseQrcode = (e) => {
 		const target = document.querySelector("#qrcode");
@@ -53,6 +52,13 @@ const Header = () => {
 		}
 	}
 
+	const onPrint = () => {
+		const windowObj = window.open('/print', "PrintWindow", "width=1000, height=600, top=100, left=500, toolbars=no, scrollbars=no, status=no, resizable=no");
+		windowObj.focus();
+		windowObj.print();
+		setTimeout(() => windowObj.close(), 2000);
+	}
+
 	useEffect(() => {
 		if (!document.fullscreenEnabled) {
 			setFullScreen(0);
@@ -61,12 +67,21 @@ const Header = () => {
 		}
 	}, []);
 
+	useEffect(() => {
+		if (location.pathname === '/profile') {
+			setIsProfile(true);
+		} else {
+			setIsProfile(false);
+		}
+	}, [location]);
+
 	return (<>
 		<Wrapper>
 			<div>
 				<Btn icon="hexagonal" onClick={onClickHexagonal} />
 			</div>
 			<div>
+				{isProfile && <Btn icon="print" onClick={onPrint} />}
 				<Btn icon="clip" onClick={onOpenQrcode} />
 				{fullScreen === 1 && <Btn icon="inner" onClick={onFullScreen} />}
 				{fullScreen === 2 && <Btn icon="outer" onClick={onFullScreen} />}

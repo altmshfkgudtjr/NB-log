@@ -14,6 +14,7 @@ const ImageContent = ({ src }) => {
 
 const Container = styled.div`
 	position: relative;
+	margin: auto;
 	max-width: 320px;
 	${styles.noselect};
 `;
@@ -21,10 +22,11 @@ const Container = styled.div`
 const Content = styled.img`
 	max-width: 320px;
 	display: block;
-	margin: auto;
+	margin: 0 auto 0 auto;
 
 	${media.small} {
 		max-width: 100%;
+		margin: 0 auto 1rem auto;
 	}
 `;
 

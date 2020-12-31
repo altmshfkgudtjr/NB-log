@@ -87,9 +87,7 @@ const Lines = () => {
 		init();
 	}, [init]);
 
-	return (<>
-		<Canvas ref={canvasRef} />
-	</>);
+	return <Canvas ref={canvasRef} />;
 }
 
 const Canvas = styled.canvas`

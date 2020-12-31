@@ -37,6 +37,8 @@ const Terminal = () => {
 		} else if (!check_command(cmd)) {
 			const output = text.split(' ')[0];
 			msgs.push({ type: 'text', content: `'${output}'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.` });
+		} else if (cmd === 'pwd') {
+			msgs.push({ type: 'text', content: window.location.href });
 		} else if (typeof(command[cmd]) === 'string') {
 			msgs.push({ type: 'text', content: command[cmd] });
 		} else if (cmd === 'ls') {

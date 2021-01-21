@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"private": false,
 	"dependencies": {
-		"immer": "^7.0.14",
+		"immer": "^8.0.1",
 		"qrcode-generator": "^1.4.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",

@@ -40,15 +40,9 @@ const Content = styled.a`
 	};
 	color: ${palette.blue3};
 	transition: .1s ${styles.transition};
-	outline: none;
 
-	&:focus, &:hover {
+	&:hover {
 		color: ${palette.orange4};
-	}
-
-	&:focus {
-		text-decoration: underline;
-		text-underline-position: under;
 	}
 
 	&:last-child {

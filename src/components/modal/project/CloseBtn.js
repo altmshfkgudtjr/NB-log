@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 // icons
 import { Close } from 'lib/icons'
 // lib

@@ -14,7 +14,6 @@ const Content = styled.a`
 	color: ${props => props.color};
 	word-break: break-all;
 	margin-bottom: 1rem;
-	outline: none;
 
 	&:visited {
 		color: ${props => props.color};

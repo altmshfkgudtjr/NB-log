@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async"
 import Name from 'containers/profile/Name'
 import Content from 'containers/profile/Content'
 
+// TODO 출력 레이아웃 재설계하기 (선택사항 고를 수 있도록)
 const PrintPage = () => {
 	return (<>
 		<Helmet>

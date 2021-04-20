@@ -15,7 +15,6 @@ const Container = styled.button`
 	text-align: left;
 	grid-column-end: span 2;
 	cursor: pointer;
-	outline: none;
 
 	&:nth-of-type(even) {
 		margin-left: 50%;

@@ -54,7 +54,7 @@ const Container = styled.button`
 		}
 	}
 
-	&:focus, &:active {
+	&:active {
 		& > div {
 			opacity: 1;
 			transform: scale(1, 1);

@@ -13,16 +13,20 @@ import NotFound from 'pages/NotFound'
 import Header from 'containers/Header'
 import Modal from 'containers/modal'
 import PageLoading from 'containers/common/PageLoading'
+// hook
+import useWebAccessibility from 'lib/hooks/useWebAccessibility'
 // lib
 import * as loadingTime from 'lib/loadingTime'
 
 const App = () => {
-	return (<>
+	const [isMouseDown] = useWebAccessibility();
+
+	return (<div className={isMouseDown ? 'mousedown' : ''}>
 		<Switch>
 			<Route path="/print" component={PrintPage} exact />
 			<Route path="*" component={AppContent} />
 		</Switch>
-	</>);
+	</div>);
 }
 
 const AppContent = () => {

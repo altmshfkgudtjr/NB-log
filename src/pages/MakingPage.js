@@ -7,6 +7,7 @@ import HexagonalText from 'containers/making/HexagonalText'
 import Content from 'containers/making/Content'
 // components
 import Title from 'components/making/Title'
+import TopBtn from 'components/making/TopBtn'
 
 const MakingPage = () => {
 	return (<>
@@ -19,6 +20,8 @@ const MakingPage = () => {
 		<Title message="FBWE - For Better Web Experience." />
 		<HexagonalText />
 		<Content />
+
+		<TopBtn />
 	</>);
 }
 

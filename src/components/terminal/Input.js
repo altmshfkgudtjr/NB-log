@@ -31,6 +31,7 @@ const UserInput = styled.input`
 	flex-grow: 1;
 	font-weight: 100;
 	padding: 0 0 0 4px;
+	outline: none;
 `;
 
 export default Input

@@ -15,11 +15,20 @@ const provideMap = {
 	print: Print
 };
 
+const provideAlt = {
+	clip: "현재 페이지 QR 코드 보기",
+	hexagonal: "메인으로 가기",
+	inner: "전체화면 종료",
+	outer: "전체화면 실행",
+	print: "프로필 출력하기",
+}
+
 const Btn = ({ icon, onClick }) => {
 	const Icon = provideMap[icon];
+	const alt = provideAlt[icon];
 
 	return (
-		<Container onClick={onClick}>
+		<Container onClick={onClick} title={alt}>
 			<Background />
 			<IconBlock>
 				<Icon />

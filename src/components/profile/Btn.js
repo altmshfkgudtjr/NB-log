@@ -8,7 +8,7 @@ import palette from 'lib/styles/palette'
 const Btn = ({ message, href, isPrint=false }) => {
 	const showUrl = href.startsWith('mailto:') ? href.slice(7) : href;
 	return (
-		<Container isPrint={isPrint}>
+		<Container isPrint={isPrint} role="listitem">
 			<Content href={href}
 							 alt={message}
 							 target="_blank_"

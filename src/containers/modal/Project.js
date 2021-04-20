@@ -10,6 +10,7 @@ import TextContent from 'components/modal/project/TextContent'
 import PageUrl from 'components/modal/project/PageUrl'
 import CloseBtn from 'components/modal/project/CloseBtn'
 
+// TODO tabindex로 모달이 열렸을 경우, tabFocusing 가두기
 const Project = ({ PreventModalOff, ModalOff, args }) => {
 	const project = useSelector(state => state.project.project);
 	const [off, setOff] = useState(false);

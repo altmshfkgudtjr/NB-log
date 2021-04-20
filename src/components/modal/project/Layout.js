@@ -4,7 +4,15 @@ import styled from 'styled-components'
 import * as styles from 'lib/styles/styles'
 
 const Layout = ({ onMouseDown, children }) => {
-	return <Container onMouseDown={onMouseDown}>{children}</Container>;
+	return (
+		<Container 
+			role="dialog"
+			aria-modal="true" 
+			onMouseDown={onMouseDown}
+		>
+			{children}
+		</Container>
+	);
 }
 
 const Container = styled.div`

@@ -94,12 +94,13 @@ const Container = styled.button`
 		opacity: .8;
 	}
 
-	&:focus div, &:hover div {
+	&:focus span, &:hover span {
 		top: -180px;
 	}
 `;
 
-const Message = styled.div`
+const Message = styled.span`
+	display: block;
 	position: absolute;
 	top: ${props => props.pop
 		? '-180px'

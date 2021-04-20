@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const InfoWrapper = ({ children }) => {
-	return <Container>{children}</Container>;
+	return <Container role="list">{children}</Container>;
 }
 
-const Container = styled.div`
+const Container = styled.section`
 	margin-bottom: 4rem;
 `;
 

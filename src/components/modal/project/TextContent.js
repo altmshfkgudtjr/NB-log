@@ -5,7 +5,7 @@ const TextContent = ({ text }) => {
 	return <Container>{text}</Container>;
 }
 
-const Container = styled.div`
+const Container = styled.p`
 	margin-bottom: 3rem;
 `;
 

@@ -14,16 +14,17 @@ const SkillContent = ({ category, contentList }) => {
 	);
 }
 
-const Container = styled.div`
+const Container = styled.section`
 	margin-bottom: 1rem;
 `;
 
-const Category = styled.div`
+const Category = styled.h3`
 	font-weight: 600;
+	margin-top: 0;
 	margin-bottom: .5rem;
 `;
 
-const Content = styled.div`
+const Content = styled.p`
 	margin-bottom: .5rem;
 	margin-left: 1rem;
 

@@ -5,12 +5,12 @@ import media from 'lib/styles/media'
 
 const InfoContent = ({ time, management='', content='' }) => {
 	return (
-		<Container>
+		<Container role="listitem">
 			<Header>
 				{management.length !== 0 && <strong>{management}</strong>}
 				<span>({time})</span>
 			</Header>
-			<div>{content}</div>
+			<p>{content}</p>
 		</Container>
 	);
 }

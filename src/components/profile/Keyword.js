@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import palette from 'lib/styles/palette'
 
 const Keyword = ({ message }) => {
-	return <Container>⦁ {message}</Container>;
+	return <Container role="listitem">⦁ {message}</Container>;
 }
 
 const Container = styled.div`

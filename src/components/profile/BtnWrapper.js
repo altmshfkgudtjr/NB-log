@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import media from 'lib/styles/media'
 
 const BtnWrapper = ({ children }) => {
-	return <Container>{children}</Container>;
+	return <Container role="list">{children}</Container>;
 }
 
 const Container = styled.div`

@@ -3,24 +3,22 @@
 	"version": "1.0.0",
 	"private": false,
 	"dependencies": {
-		"immer": "^8.0.1",
+		"immer": "^9.0.1",
 		"qrcode-generator": "^1.4.4",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
+		"react": "17.0.2",
+		"react-dom": "^17.0.2",
 		"react-helmet-async": "^1.0.6",
 		"react-redux": "^7.2.0",
 		"react-router-dom": "^5.2.0",
-		"react-scripts": "^3.4.3",
-		"react-side-effect": "^2.1.0",
-		"react-spring": "^8.0.27",
+		"react-scripts": "^4.0.3",
 		"redux": "^4.0.5",
 		"redux-thunk": "^2.3.0",
 		"styled-components": "^5.1.1"
 	},
 	"scripts": {
-		"start": "env-cmd -f .env react-scripts start",
+		"start": "react-scripts start",
 		"prebuild": "react-scripts test --watchAll=false",
-		"build": "cross-env GENERATE_SOURCEMAP=false env-cmd -f .env react-scripts build",
+		"build": "react-scripts build",
 		"test": "react-scripts test"
 	},
 	"eslintConfig": {
@@ -41,9 +39,7 @@
 	"devDependencies": {
 		"@testing-library/jest-dom": "^5.11.5",
 		"@testing-library/react": "^11.1.0",
-		"@testing-library/user-event": "^12.1.10",
-		"cross-env": "^7.0.2",
-		"env-cmd": "^10.1.0",
+		"@testing-library/user-event": "^13.1.5",
 		"prop-types": "^15.7.2",
 		"redux-mock-store": "^1.5.4"
 	},

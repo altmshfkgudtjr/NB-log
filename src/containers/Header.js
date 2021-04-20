@@ -10,33 +10,32 @@ import Btn from 'components/header/Btn'
 import { openPage } from 'modules/pageloading'
 
 const Header = () => {
-	const location = useLocation();
 	const dispatch = useDispatch();
-	const [qrcode, setQrcode] = useState(false);
-	const [fullScreen, setFullScreen] = useState(0);
-	/*
-		0: not enabled
-		1: off
-		2: on
+	const location = useLocation();
+
+	/* 
+	fullScreen Value
+	- [0] not enabled
+	- [1] on
+	- [2] off
 	*/
-	const [isProfile, setIsProfile] = useState(false);
+	const [fullScreen, setFullScreen] = useState(0);
+	const [isQrcode, setIsQrcode] = useState(false);
+	const [isPrint, setIsPrint] = useState(false);
 
 	const onClickHexagonal = (e) => {
 		e.preventDefault();
 		
-		if (location.pathname === '/main') {
-			return;
-		} else {
-			dispatch(openPage('/main'));
-		}
+		if (location.pathname === '/main') return;
+		else dispatch(openPage('/main'));
 	}
 
-	const onOpenQrcode = () => setQrcode(true);
+	const onOpenQrcode = () => setIsQrcode(true);
 
 	const onCloseQrcode = (e) => {
 		const target = document.querySelector("#qrcode");
 		if (!target.contains(e.target)) {
-			setQrcode(false);
+			setIsQrcode(false);
 		}
 	}
 
@@ -55,25 +54,46 @@ const Header = () => {
 	const onPrint = () => {
 		const windowObj = window.open('/print', "PrintWindow", "width=1000, height=600, top=100, left=500, toolbars=no, scrollbars=no, status=no, resizable=no");
 		windowObj.focus();
-		windowObj.print();
-		setTimeout(() => windowObj.close(), 2000);
+		setTimeout(() => {
+			windowObj.print();
+			windowObj.close();
+		}, 1000);
 	}
 
-	useEffect(() => {
-		if (!document.fullscreenEnabled) {
-			setFullScreen(0);
-		} else {
+	const onChangeFullScreen = () => {
+		if (!document.fullscreenElement && 
+				!document.webkitIsFullScreen && 
+				!document.mozFullScreen && 
+				!document.msFullscreenElement
+		) {
 			setFullScreen(2);
 		}
+	}
+
+
+	/** Check Fullscreen Enabled */
+	useEffect(() => {
+		if (!document.fullscreenEnabled) setFullScreen(0);
+		else setFullScreen(2);
 	}, []);
 
+	/** Fullscreen Escaped Detecting */
+	useEffect(() => {
+		if (fullScreen !== 1) return;
+		document.addEventListener('fullscreenchange', onChangeFullScreen);
+		return () => document.removeEventListener('fullscreenchange', onChangeFullScreen);
+	}, [fullScreen]);
+
+	/** Check Printing Enabled */
 	useEffect(() => {
 		if (location.pathname === '/profile') {
-			setIsProfile(true);
+			setIsPrint(true);
 		} else {
-			setIsProfile(false);
+			setIsPrint(false);
 		}
 	}, [location]);
+
+
 
 	return (<>
 		<Wrapper>
@@ -81,13 +101,13 @@ const Header = () => {
 				<Btn icon="hexagonal" onClick={onClickHexagonal} />
 			</div>
 			<div>
-				{isProfile && <Btn icon="print" onClick={onPrint} />}
+				{isPrint && <Btn icon="print" onClick={onPrint} />}
 				<Btn icon="clip" onClick={onOpenQrcode} />
 				{fullScreen === 1 && <Btn icon="inner" onClick={onFullScreen} />}
 				{fullScreen === 2 && <Btn icon="outer" onClick={onFullScreen} />}
 			</div>
 		</Wrapper>
-		{qrcode && <Qrcode onClose={onCloseQrcode} />}
+		{isQrcode && <Qrcode onClose={onCloseQrcode} />}
 	</>);
 }
 

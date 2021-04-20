@@ -8,6 +8,7 @@ import PageInfo from 'components/modal/project/PageInfo'
 import ImageContent from 'components/modal/project/ImageContent'
 import TextContent from 'components/modal/project/TextContent'
 import PageUrl from 'components/modal/project/PageUrl'
+import CloseBtn from 'components/modal/project/CloseBtn'
 
 const Project = ({ PreventModalOff, ModalOff, args }) => {
 	const project = useSelector(state => state.project.project);
@@ -28,6 +29,8 @@ const Project = ({ PreventModalOff, ModalOff, args }) => {
 	
 	return (
 		<Layout onMouseDown={onClickBackground}>
+			<CloseBtn off={off} onClick={onClickBackground} />
+			
 			<Page onMouseDown={PreventModalOff} off={off}>
 				<PageTitle title={project.title} />
 				<PageInfo infoList={project.position} collaborator={project.collaborator} />

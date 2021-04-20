@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import * as styles from 'lib/styles/styles'
 import media from 'lib/styles/media'
 
-const ImageContent = ({ src }) => {
+const ImageContent = ({ src, alt }) => {
 	return (
 		<Container>
-			<Content src={src} alt="" />
+			<Content src={src} alt={alt} />
 		</Container>
 	);
 }

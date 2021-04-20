@@ -5,6 +5,7 @@ import Wrapper from 'components/terminal/Wrapper'
 import Input from 'components/terminal/Input'
 import Empty from 'components/terminal/Empty'
 import Folder from 'components/terminal/Folder'
+import Emphasis from 'components/terminal/Emphasis'
 // modules
 import { getCommand } from 'modules/json'
 import { openPage } from 'modules/pageloading'
@@ -15,11 +16,11 @@ const Terminal = () => {
 	const [messages, setMessages] = useState([]);
 	const ref = useRef(null);
 	
-	const onKeyUp = (e) => {
-		if (!e.target) return;
-		if (e.keyCode === 13) {
-			const cmd = e.target.value.toLowerCase();
-			e.target.value = '';
+	const onKeyUp = ({ target, keyCode }) => {
+		if (!target) return;
+		if (keyCode === 13) {
+			const cmd = target.value.toLowerCase();
+			target.value = '';
 			do_command(cmd);
 		}
 	}
@@ -59,6 +60,8 @@ const Terminal = () => {
 				const target = args[1 + isSudo].slice(-1) === '/' ? args[1 + isSudo].slice(0, -1) : args[1 + isSudo];
 				if (args.length >= 3 + isSudo) {
 					msgs.push({ type: 'text', content: '지정된 경로를 찾을 수 없습니다.' });
+				} else if (args[1] === '~' || (isSudo && args[2] === '~')) {
+					dispatch(openPage('/terminal'));
 				} else if (pathList.indexOf(target) === -1) {
 					msgs.push({ type: 'text', content: '지정된 경로를 찾을 수 없습니다.' });
 				} else {
@@ -66,8 +69,12 @@ const Terminal = () => {
 				}
 			}
 		} else if (cmd === 'exit') {
-			msgs.push({ type: 'text', content: 'exit: Permission denied' });
+			msgs.push({ type: 'text', content: 'Good Bye!' });
+			window.setTimeout(() => dispatch(openPage('/main')), 500);
+		} else if (cmd === 'clear') {
+			msgs.splice(0, msgs.length);
 		}
+		
 		setMessages(msgs);
 	}
 
@@ -77,18 +84,34 @@ const Terminal = () => {
 			else if (data.type === 'text') return <div key={idx}>{data.content}</div>;
 			else if (data.type === 'SECRET') return <Folder key={idx} all={true} folders={data.content} />
 			else if (data.type === 'FOLDER') return <Folder key={idx} all={false} folders={data.content} />
+			else if (data.type === 'EMPHASIS') return <Emphasis key={idx} content={data.content} />
 			else return null;
 		}
 	);
+	
+
+	
+	useEffect(() => dispatch(getCommand()), [dispatch]);
 
 	useEffect(() => {
-		dispatch(getCommand());
-	}, [dispatch]);
+		const msgs = [];
+
+		msgs.push({ type: 'EMPHASIS', content: '% Welcome to NB#Log terminal! %' });
+		msgs.push({ type: 'EMPHASIS', content: '- - - - - - - - - - - - - - - - - - - - - - - - - - ' });
+		msgs.push({ type: 'EMPHASIS', content: 'COMMANDS' });
+		Object.keys(command).forEach(c => msgs.push({ type: 'text', content: `　${c}` }));
+		msgs.push({ type: 'EMPHASIS', content: '- - - - - - - - - - - - - - - - - - - - - - - - - - ' });
+		msgs.push({ type: 'text', content: '　' });
+
+		setMessages(msgs);
+	}, [command, setMessages]);
 
 	useEffect(() => {
 		if (!ref.current) return;
 		ref.current.scrollTop = ref.current.scrollHeight;
 	}, [Content]);
+
+
 
 	return (
 		<Wrapper ref={ref}>

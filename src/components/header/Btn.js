@@ -45,7 +45,7 @@ const Container = styled.button`
 		margin-right: 0;
 	}
 
-	&:hover {
+	&:focus, &:hover {
 		opacity: 1;
 
 		& > div {
@@ -54,7 +54,7 @@ const Container = styled.button`
 		}
 	}
 
-	&:active {
+	&:focus, &:active {
 		& > div {
 			opacity: 1;
 			transform: scale(1, 1);

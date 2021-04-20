@@ -10,9 +10,7 @@ const Hexagonal = () => {
 	const dispatch = useDispatch();
 	const [pop, setPop] = useState([0,0,0,0,0,0]);
 
-	const onClick = (type) => {
-		dispatch(openPage(type));
-	}
+	const onClick = (type) => dispatch(openPage(type));
 
 	const onInteractive = () => {
 		return new Promise(resolve => {

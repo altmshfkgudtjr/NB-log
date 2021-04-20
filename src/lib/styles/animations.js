@@ -173,6 +173,13 @@ const hexagonalDraw = keyframes`
 	100% { stroke-dashoffset: 0; fill: rgba(0,0,0,.8); }
 `;
 
+const mouseWheel = keyframes`
+  0% { opacity: 0; transform: translate(-50%, 20px); }
+  30% { opacity: 1; transform: translate(-50%, 28px); }
+  60% { opacity: 0; transform: translate(-50%, 36px); }
+  100% { opacity: 0; transform: translate(-50%, 36px); }
+`;
+
 const animations = {
 	fadeIn,
 	fadeOut,
@@ -193,7 +200,8 @@ const animations = {
 	loadingOn,
 	loadingOff,
 	hexagonalSpin,
-	hexagonalDraw
+	hexagonalDraw,
+	mouseWheel
 };
 
 export default animations

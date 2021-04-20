@@ -7,18 +7,21 @@ const ProjectWrapper = ({ onClick, children }) => {
 	return <Container onClick={onClick}>{children}</Container>;
 }
 
-const Container = styled.div`
+const Container = styled.button`
 	position: relative;
 	display: flex;
 	width: 100%;
+	padding: 0;
+	text-align: left;
 	grid-column-end: span 2;
 	cursor: pointer;
+	outline: none;
 
 	&:nth-of-type(even) {
 		margin-left: 50%;
 	}
 
-	&:hover {
+	&:focus, &:hover {
 		& > #cd {
 			transform: translateX(80%) rotate(720deg);
 		}

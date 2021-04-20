@@ -15,7 +15,6 @@ export const dragScreen = (target) => {
 
 	function mouseMove(e) {
 		e.preventDefault();
-
 		const x = e.pageX - target.offsetLeft;
 		target.scrollLeft = scrollLeft - (x - originX) * SPEED;
 	}
@@ -26,6 +25,6 @@ export const dragScreen = (target) => {
 		target.onmousemove = null;
 		document.body.style.cursor = '';
 	}
-
-	target.onmousedown = mouseDown;
+	
+	target && (target.onmousedown = mouseDown);
 }

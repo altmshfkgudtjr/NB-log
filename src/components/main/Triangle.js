@@ -12,10 +12,12 @@ const Triangle = ({ message, onClick, pop=false }) => {
 	);
 }
 
-const Container = styled.div`
+const Container = styled.button`
+	display: block;
 	position: absolute;
 	width: 0;
 	height: 0;
+	padding: 0;
 	margin-left: 75px;
 	margin-top: -3px;
 	border-style: solid;
@@ -23,6 +25,7 @@ const Container = styled.div`
 	transform-origin: 75px 133px;
 	transition: .3s ${styles.transition};
 	cursor: pointer;
+	outline: none;
 
 	&:nth-child(1) { 
 		transform: ${props => props.pop
@@ -38,7 +41,7 @@ const Container = styled.div`
 		};
 		border-color: ${palette.hexGreen} transparent;
 
-		&:hover {
+		&:focus, &:hover {
 			transform: rotate(60deg) translate(0, -10px);
 		}
 	}
@@ -49,7 +52,7 @@ const Container = styled.div`
 		};
 		border-color: ${palette.hexPurple} transparent;
 
-		&:hover {
+		&:focus, &:hover {
 			transform: rotate(120deg) translate(0, -10px);
 		}
 	}
@@ -60,7 +63,7 @@ const Container = styled.div`
 		};
 		border-color: ${palette.hexYellow} transparent;
 
-		&:hover {
+		&:focus, &:hover {
 			transform: rotate(180deg) translate(0, -10px);
 		}
 	}
@@ -71,7 +74,7 @@ const Container = styled.div`
 		};
 		border-color: ${palette.hexRed} transparent;
 
-		&:hover {
+		&:focus, &:hover {
 			transform: rotate(240deg) translate(0, -10px);
 		}
 	}
@@ -82,16 +85,16 @@ const Container = styled.div`
 		};
 		border-color: ${palette.hexOrange} transparent;
 
-		&:hover {
+		&:focus, &:hover {
 			transform: rotate(300deg) translate(0, -10px);
 		}
 	}
 
-	&:hover {
+	&:focus, &:hover {
 		opacity: .8;
 	}
 
-	&:hover div {
+	&:focus div, &:hover div {
 		top: -180px;
 	}
 `;

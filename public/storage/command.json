@@ -56,5 +56,9 @@
 			"type": "URL",
 			"content": "terminal"
 		}
-	]
+	],
+	"clear": {
+		"type": "ACTION",
+		"content": "clear"
+	}
 }

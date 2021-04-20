@@ -5,7 +5,7 @@ import * as styles from 'lib/styles/styles'
 import media from 'lib/styles/media'
 
 const Barcode = () => {
-	return <Content src="/images/barcode.gif" alt="barcode" />;
+	return <Content src="/images/barcode.gif" alt="" />;
 }
 
 const Content = styled.img`

@@ -3,7 +3,8 @@
 		[
 			{
 				"type": "image",
-				"content": "https://user-images.githubusercontent.com/47492535/103334656-8a9ccd00-4ab5-11eb-816b-b7cd95d2164b.jpg"
+				"content": "https://user-images.githubusercontent.com/47492535/103334656-8a9ccd00-4ab5-11eb-816b-b7cd95d2164b.jpg",
+				"alt": "NB#log 로고 사진"
 			},
 			{
 				"type": "text",
@@ -14,7 +15,8 @@
 		[
 			{
 				"type": "image",
-				"content": "https://user-images.githubusercontent.com/47492535/103403088-56e3a500-4b92-11eb-9530-845477d22671.png"
+				"content": "https://user-images.githubusercontent.com/47492535/103403088-56e3a500-4b92-11eb-9530-845477d22671.png",
+				"alt": "NB#log 컨셉에 대한 사진"
 			},
 			{
 				"type": "text",
@@ -25,7 +27,8 @@
 		[
 			{
 				"type": "image",
-				"content": "https://user-images.githubusercontent.com/47492535/103402371-43373f00-4b90-11eb-87be-737073c20ee0.png"
+				"content": "https://user-images.githubusercontent.com/47492535/103402371-43373f00-4b90-11eb-87be-737073c20ee0.png",
+				"alt": "NB#log 프로젝트 컨셉에 대한 사진"
 			},
 			{
 				"type": "text",

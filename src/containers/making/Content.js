@@ -20,7 +20,7 @@ const Content = () => {
 		(data, idx) => <ContentWrapper key={idx}>
 			{data.map(
 				(d, i) => d.type === 'image'
-					? <ImageContent key={i} src={d.content} />
+					? <ImageContent key={i} src={d.content} alt={d.alt} />
 					: <TextContent key={i} keyword={d.keyword} text={d.content} />
 			)}
 		</ContentWrapper>

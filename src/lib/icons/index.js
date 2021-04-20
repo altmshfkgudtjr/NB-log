@@ -8,3 +8,4 @@ export { ReactComponent as HexaB } from './hexaB.svg';
 export { ReactComponent as HexaW } from './hexaW.svg';
 export { ReactComponent as HexaE } from './hexaE.svg';
 export { ReactComponent as Print } from './print.svg';
+export { ReactComponent as Close } from './close.svg';

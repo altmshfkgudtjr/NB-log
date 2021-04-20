@@ -1,24 +1,17 @@
 const Fetch = (url, method, sendData, callback, failed) => {
-	/* Auto Authroization */
-	const token = localStorage.getItem('tk');
-  let authorization;
-  if (token === null || token === undefined || token === 'undefined') {
-      authorization = {};
-  } else {
-      authorization = {'Authorization': "Bearer " + token};
-  }
+	const headers = {};
 
-   /* init request form */
+	/* init request form */
   let request = null;
   if (method === 'GET') {
   	request = {
   		method: 'GET',
-  		headers: authorization
+  		headers: headers
   	};
   } else {
   	request = {
   		method: method,
-  		headers: Object.assign(authorization, {
+  		headers: Object.assign(headers, {
 				'Content-Type': 'application/json'
 			}),
 			body: JSON.stringify(sendData)

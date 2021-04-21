@@ -16,6 +16,7 @@ const Counter = () => {
 		const step = (timestamp) => {
 			if (!startTimestamp) startTimestamp = timestamp;
 			const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+			if (!ref.current) return;
 			ref.current.innerHTML = Math.floor(progress * (end - start) + start);
 			if (progress < 1) {
 				window.requestAnimationFrame(step);

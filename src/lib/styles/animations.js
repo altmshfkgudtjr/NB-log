@@ -180,6 +180,12 @@ const mouseWheel = keyframes`
   100% { opacity: 0; transform: translate(-50%, 36px); }
 `;
 
+const blink = keyframes`
+	0% { opacity: 0.3; }
+	40% { opacity: 0.4; }
+	100% { opacity: 0.3; }
+`;
+
 const animations = {
 	fadeIn,
 	fadeOut,
@@ -201,7 +207,8 @@ const animations = {
 	loadingOff,
 	hexagonalSpin,
 	hexagonalDraw,
-	mouseWheel
+	mouseWheel,
+	blink
 };
 
 export default animations

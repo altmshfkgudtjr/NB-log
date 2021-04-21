@@ -1,12 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
+// icon
+import { Hexagonal } from 'lib/icons'
+// lib
+import animations from 'lib/styles/animations'
 
 const ImageContent = ({ src, size, color }) => {
-	const [preview, setPreview] = useState(true);
 	const ref = useRef(null);
+	const [preview, setPreview] = useState(true);
+
 	let [width, height] = size.split('×');
-	width = window.innerWidth < width ? 'auto' : width + 'px';
-	height = window.innerWidth < width ? height + 'px' : 'auto';
+	height = window.innerWidth > 702 
+		? `${Math.floor(height * (654 / width))}px`
+		: `${Math.floor(height * ((window.innerWidth - 32) / width))}px`;
+	width = window.innerWidth > 702
+		? `${654}px`
+		: `${window.innerWidth - 32}px`;
 
 	/* Image Preload */
 	useEffect((() => {
@@ -22,14 +31,20 @@ const ImageContent = ({ src, size, color }) => {
 
 	return (
 		<Container>
-			<Content src="" alt="" ref={ref} 
-							 width={width}
-							 height={height}
-							 preview={preview} />
-			<Preview width={width}
-							 height={height}
-							 preview={preview}
-							 color={color} />
+			<Content 
+				src="" alt="" ref={ref} 
+				width={width}
+				height={height}
+				preview={preview} 
+			/>
+			<Preview 
+				width={width}
+				height={height}
+				preview={preview}
+				color={color}
+			>
+				<Icon />
+			</Preview>
 		</Container>
 	);
 }
@@ -56,11 +71,13 @@ const Content = styled.img`
 
 const Preview = styled.div`
 	display: ${props => props.preview
-		? 'block'
+		? 'flex'
 		: 'none'
 	};
+	align-items: center;
+	justify-content: center;
 	background-color: ${props => props.color};
-	opacity: .2;
+	opacity: .3;
 	width: ${props => props.width};
 	max-width: 100%;
 	height: ${props => props.height};
@@ -70,6 +87,14 @@ const Preview = styled.div`
 	};
 	margin: auto;
 	border-radius: 4px;
+	animation: 3s ${animations.blink} ease-in-out infinite;
+`;
+
+const Icon = styled(Hexagonal)`
+	width: 32px;
+	height: 32px;
+	opacity: 1;
+	animation: 6s ${animations.hexagonalSpin} linear infinite;
 `;
 
 export default ImageContent

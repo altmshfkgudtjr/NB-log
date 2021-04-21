@@ -3,6 +3,9 @@ import { Helmet } from "react-helmet-async"
 // containers
 import Name from 'containers/profile/Name'
 import Content from 'containers/profile/Content'
+import Liker from 'containers/profile/Liker'
+// components
+import Layout from 'components/profile/Layout'
 
 const ProfilePage = () => {
 	return (<>
@@ -11,7 +14,12 @@ const ProfilePage = () => {
 		</Helmet>
 
 		<Name />
-		<Content />
+		
+		<Layout>
+			<Liker />
+
+			<Content />
+		</Layout>
 	</>);
 }
 

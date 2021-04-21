@@ -14,14 +14,27 @@ const Terminal = () => {
 	const dispatch = useDispatch();
 	const command = useSelector(state => state.json.command);
 	const [messages, setMessages] = useState([]);
+	const [stack, setStack] = useState([]);
+	const [idx, setIdx] = useState(0);
 	const ref = useRef(null);
 	
-	const onKeyUp = ({ target, keyCode }) => {
+	const onKeyUp = ({ target, key }) => {
 		if (!target) return;
-		if (keyCode === 13) {
+		if (key === "Enter") {
 			const cmd = target.value.toLowerCase();
 			target.value = '';
 			do_command(cmd);
+			setStack(v => [ ...v, cmd]);
+			setIdx(stack.length + 1);
+		} else if (key === "ArrowUp") {
+			if (idx === 0) return;
+			target.value = stack[idx - 1];
+			setIdx(v => v - 1);
+			target.selectionStart = target.selectionEnd - target.value.length;
+		} else if (key === "ArrowDown") {
+			if (stack.length === 0 || idx >= stack.length - 1) return;
+			target.value = stack[idx + 1];
+			setIdx(v => v + 1);
 		}
 	}
 

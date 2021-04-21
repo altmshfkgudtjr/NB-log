@@ -18,7 +18,7 @@ const Container = styled.div`
 	padding: 0 2rem;
 	z-index: 20;
 
-	${media.small} {
+	${media.medium} {
 		height: 56px;
 		padding: 0 1rem;
 		background-color: white;

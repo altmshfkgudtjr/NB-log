@@ -92,9 +92,9 @@ const Content = ({ isPrint=false }) => {
 				<InfoTitle message="EDUCATION" />
 				{EducationList}
 			</InfoWrapper>
-		</Wrapper>
 
-		<Footer />
+			<Footer />
+		</Wrapper>
 	</>);
 }
 

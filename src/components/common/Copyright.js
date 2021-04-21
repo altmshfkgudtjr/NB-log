@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Copyright = () => {
-	return <Content>© NB, 2021 All Rights Reserved</Content>;
+	return <Content>© 2021-present NB. All Rights Reserved.</Content>;
 }
 
 const Content = styled.div`

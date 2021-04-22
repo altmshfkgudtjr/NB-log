@@ -1,11 +1,16 @@
 {
   "short_name": "NB#log",
-  "name": "Hyeongseok Kim Portfolio 2021",
+  "name": "NB#log",
   "icons": [
     {
-      "src": "favicons/favicon_96x96.png",
-      "sizes": "96x96 48x48 24x24",
-      "type": "image/x-icon"
+      "src": "favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     }
   ],
   "start_url": ".",

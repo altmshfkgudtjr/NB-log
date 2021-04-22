@@ -1,17 +1,16 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import palette from 'lib/styles/palette'
 
 const PageInfo = ({ infoList, collaborator }) => {
-	const Position = infoList.join(" / ");
-	const Collabo = collaborator.join(' ');
+	const Position = infoList && infoList.join(" / ");
+	const Collabo = collaborator && collaborator.join(' ');
 
 	return (
 		<Container>
-			<strong>{Position}</strong>
-			<span> - </span>
-			<Content>{Collabo}</Content>
+			<strong>{Position || null}</strong>
+			<span> - </span>	
+			<Content>{Collabo || null}</Content>
 		</Container>
 	);
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 // Pages
 import HomePage from 'pages/HomePage'
@@ -33,15 +32,18 @@ const AppContent = () => {
 	return (
 		<PageLoading limitTime={loadingTime.page}>
 			<Header />
+
 			<Switch>
-				<Route path="/" component={HomePage} exact />
-				<Route path="/main" component={MainPage} exact />
-				<Route path="/profile" component={ProfilePage} exact />
-				<Route path="/project" component={ProjectPage} exact />
-				<Route path="/making" component={MakingPage} exact />
-				<Route path="/terminal" component={TerminalPage} exact />
-				<Route path="*" component={NotFound} status={404} />
+				<Route exact path="/" component={HomePage} />
+				<Route exact path="/main" component={MainPage} />
+				<Route exact path="/profile" component={ProfilePage} />
+				<Route exact path="/project" component={ProjectPage} />
+				<Route exact path="/project/:projectTitle" component={ProjectPage} />
+				<Route exact path="/making" component={MakingPage} />
+				<Route exact path="/terminal" component={TerminalPage} />
+				<Route component={NotFound} status={404} />
 			</Switch>
+
 			<Modal />
 		</PageLoading>
 	);

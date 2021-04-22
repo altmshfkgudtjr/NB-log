@@ -1,7 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import media from 'lib/styles/media'
+import zIndex from 'lib/styles/zIndex'
 
 const Wrapper = ({ children }) => {
 	return <Container>{children}</Container>;
@@ -16,7 +16,7 @@ const Container = styled.div`
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 0 2rem;
-	z-index: 20;
+	z-index: ${zIndex.header};
 
 	${media.medium} {
 		height: 56px;

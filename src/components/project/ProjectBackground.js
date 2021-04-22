@@ -1,5 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
+import zIndex from 'lib/styles/zIndex'
 
 const ProjectBackground = ({ selected, color }) => {
 	const landscape = window.innerWidth > window.innerHeight;
@@ -34,7 +34,7 @@ const Container = styled.div`
 		? 'scale(3, 3)'
 		: 'scale(0, 0)'
 	};
-	z-index: 20;
+	z-index: ${zIndex.modal};
 `;
 
 export default ProjectBackground

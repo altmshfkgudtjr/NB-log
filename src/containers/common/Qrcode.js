@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import qrcode from 'qrcode-generator'
 // components
 import Wrapper from 'components/common/qrcode/Wrapper'

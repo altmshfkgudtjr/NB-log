@@ -1,10 +1,9 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import media from 'lib/styles/media'
 
 const PageTitle = ({ title }) => {
-	return <Content>{title}</Content>;
+	return <Content>{title || null}</Content>;
 }
 
 const Content = styled.div`

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
+import { useHistory } from 'react-router'
 import { useSelector } from 'react-redux'
 // components
 import Layout from 'components/modal/project/Layout'
@@ -9,27 +10,58 @@ import ImageContent from 'components/modal/project/ImageContent'
 import TextContent from 'components/modal/project/TextContent'
 import PageUrl from 'components/modal/project/PageUrl'
 import CloseBtn from 'components/modal/project/CloseBtn'
+import FakeFocusInput from 'components/modal/common/FakeFocusInput'
 
-// TODO tabindex로 모달이 열렸을 경우, tabFocusing 가두기
-const Project = ({ PreventModalOff, ModalOff, args }) => {
+
+const ProjectModal = ({ PreventModalOff, ModalOff }) => {
+	const history = useHistory();
 	const project = useSelector(state => state.project.project);
+	const ref = useRef(null);
 	const [off, setOff] = useState(false);
 	
-	const onClickBackground = (e) => {
-		PreventModalOff(e);
-		args.onClose();
-		setTimeout(() => ModalOff(), 500);
-		setOff(true);
-	}
-
-	const Content = project.post.map(
+	const Content = project.post && project.post.map(
 		(data, idx) => data.type === 'image'
 			? <ImageContent key={idx} src={data.content} size={data.size} color={project.color} />
 			: <TextContent key={idx} text={data.content} />
 	);
+
+
+	const onClickBackground = useCallback((e) => {
+		PreventModalOff(e);
+		history.push('/project');
+		setTimeout(() => ModalOff(), 500);
+		setOff(true);
+	}, [
+		PreventModalOff,
+		history,
+		ModalOff,
+		setOff
+	]);
+
+	const onFocusModal = (e) => {
+		if (!ref.current) return;
+		e.target.blur();
+		ref.current.focus();
+	}
+
+
+	useEffect(() => {
+		if (history.location.pathname === "/project" ||
+				history.location.pathname === "/project/") {
+			setTimeout(() => ModalOff(), 500);
+			setOff(true);
+		}
+	}, [
+		history.location.pathname, 
+		ModalOff,
+		setOff
+	]);
 	
-	return (
-		<Layout onMouseDown={onClickBackground}>
+
+	return (<>
+		<FakeFocusInput onFocus={onFocusModal} />
+
+		<Layout onMouseDown={onClickBackground} ref={ref}>
 			<CloseBtn off={off} onClick={onClickBackground} />
 			
 			<Page onMouseDown={PreventModalOff} off={off}>
@@ -39,7 +71,9 @@ const Project = ({ PreventModalOff, ModalOff, args }) => {
 				<PageUrl url={project.url} color={project.color} />
 			</Page>
 		</Layout>
-	);
+		
+		<FakeFocusInput onFocus={onFocusModal} />
+	</>);
 }
 
-export default Project
+export default ProjectModal

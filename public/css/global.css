@@ -41,6 +41,13 @@ strong {
 	font-weight: 600;
 }
 
+dialog {
+	display: block;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+
 * {
 	font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;

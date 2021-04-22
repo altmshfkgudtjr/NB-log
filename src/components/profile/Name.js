@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import animations from 'lib/styles/animations'

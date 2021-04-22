@@ -1,8 +1,8 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import * as styles from 'lib/styles/styles'
 import media from 'lib/styles/media'
+import zIndex from 'lib/styles/zIndex'
 
 const ProjectCover = ({ project }) => {
 	const PositionList = project.position.map((data, idx) => <div key={idx}>{data}</div>);
@@ -39,7 +39,7 @@ const Container = styled.div`
 	height: 100%;
 	background-color: ${props => props.color};
 	box-shadow: ${styles.boxShadow.regular};
-	z-index: 5;
+	z-index: ${zIndex.projectCover};
 
 	${media.small} {
 		width: 100%;

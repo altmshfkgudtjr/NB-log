@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 // component
 import { Clip, Hexagonal, Inner, Outer, Print } from 'lib/icons'

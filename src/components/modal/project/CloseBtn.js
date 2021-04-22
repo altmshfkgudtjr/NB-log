@@ -18,8 +18,8 @@ const CloseBtn = ({ off, onClick }) => {
 const Wrapper = styled.button`
 	display: flex;
 	align-items: center;
-	position: absolute;
-	right: 0;
+	position: fixed;
+	right: 2rem;
 	top: 2rem;
 	padding-right: 1rem;
 	animation: ${({ off }) => off
@@ -28,6 +28,7 @@ const Wrapper = styled.button`
 	};
 	animation-duration: .8s;
 	opacity: .6;
+	outline: none;
 
 	&:focus, &:hover {
 		opacity: 1;

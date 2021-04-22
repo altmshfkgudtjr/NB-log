@@ -3,6 +3,8 @@ export const zIndexSet = (layer) => `
 `;
 
 const zIndex = {
+	header: zIndexSet(50),
+	projectCover: zIndexSet(90),
 	modal: zIndexSet(100),
 	tooltip: zIndexSet(500),
 	snackbar: zIndexSet(400),

@@ -1,9 +1,9 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import * as styles from 'lib/styles/styles'
 import animations from 'lib/styles/animations'
 import media from 'lib/styles/media'
+import zIndex from 'lib/styles/zIndex'
 
 const Wrapper = ({ children }) => {
 	return <Container id="qrcode">{children}</Container>;
@@ -21,7 +21,7 @@ const Container = styled.div`
 	border-radius: 4px;
 	box-shadow: ${styles.boxShadow.bold};
 	animation: ${animations.fadeIn} .2s cubic-bezier(.25,.75,.5,1.25);
-	z-index: 10;
+	z-index: ${zIndex.modal};
 
 	${media.small} {
 		right: 16px;

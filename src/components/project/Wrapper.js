@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 // lib
 import { scrollHorizontal } from 'lib/scrollHorizontal'

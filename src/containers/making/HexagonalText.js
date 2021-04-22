@@ -1,4 +1,3 @@
-import React from 'react'
 // components
 import Wrapper from 'components/making/hexagonalText/Wrapper'
 import Item from 'components/making/hexagonalText/HexagonalText'

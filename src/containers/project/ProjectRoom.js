@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { useHistory } from 'react-router'
 import { useSelector, useDispatch } from 'react-redux'
-// containers
-import ProjectModal from 'containers/modal/Project'
 // components
 import Wrapper from 'components/project/Wrapper'
 import ProjectWrapper from 'components/project/ProjectWrapper'
@@ -11,39 +10,25 @@ import ProjectBackground from 'components/project/ProjectBackground'
 import MouseIcon from 'components/project/MouseIcon'
 // modules
 import { getProjects } from 'modules/json'
-import { setProject } from 'modules/project'
-import { pushModal } from 'modules/modal'
 // lib
 import { dragScreen } from 'lib/screenDrag'
 
-const ProjectRoom = () => {
+const ProjectRoom = ({ projectTitle }) => {
 	const dispatch = useDispatch();
-
+	const history = useHistory();
 	const projects = useSelector(state => state.json.projects);
-
 	const [peak, setPeak] = useState([]);
 
 
-
-	const initPeak = () => {
-		const peaks = peak.map(p => false);
-		setPeak(peaks);
-	}
-
 	const onClickProject = (idx, project) => {
-		dispatch(setProject(project));
-		dispatch(pushModal(
-			'PROJECT', 
-			ProjectModal,
-			{ onClose: initPeak }
-		));
 		let selected = [...peak];
 		selected[idx] = true;
 		setPeak(selected);
+
+		history.push(`/project/${project.title.toLowerCase()}`);
 	}
-
-
-
+		
+	
 	useEffect(() => {
 		dispatch(getProjects());
 	}, [dispatch]);
@@ -55,11 +40,22 @@ const ProjectRoom = () => {
 	}, []);
 
 	useEffect(() => {
+		if (!projectTitle) {
+			const peaks = new Array(peak.length);
+			const peaks_ = peaks.map(p => false);
+			setPeak(peaks_);
+			// dispatch(popModal());
+	} else {
+			const peaks = projects.map(p => p.title.toLowerCase() === projectTitle);
+			setPeak(peaks);
+		}
+	}, [dispatch, projectTitle, projects, peak.length, setPeak]);
+
+	useEffect(() => {
 		const peaks = [];
 		projects.forEach(t => peaks.push(false));
 		setPeak(peaks);
 	}, [projects]);
-
 
 
 	const ProjectList = projects.map(
@@ -71,7 +67,6 @@ const ProjectRoom = () => {
 			</ProjectWrapper>
 		)
 	);
-
 
 
 	return (<>

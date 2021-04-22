@@ -11,6 +11,7 @@ const Container = styled.button`
 	display: flex;
 	width: 100%;
 	padding: 0;
+	margin: 0;
 	text-align: left;
 	grid-column-end: span 2;
 	cursor: pointer;

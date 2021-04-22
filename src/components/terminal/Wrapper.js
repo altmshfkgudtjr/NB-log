@@ -34,6 +34,7 @@ const Content = styled.div`
 
 
 	${media.small} {
+		max-height: 76%;
 		padding: 0 1rem;
 	}
 

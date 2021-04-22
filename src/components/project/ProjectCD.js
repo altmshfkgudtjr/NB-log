@@ -23,7 +23,7 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transform: translateX(60%);
+	transform: translateX(60%) rotate(0deg);
 	transition: 5s ${styles.transition};
 	box-sizing: border-box;
 	border: 8px solid white;

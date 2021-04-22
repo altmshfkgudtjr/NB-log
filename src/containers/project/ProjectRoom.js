@@ -44,7 +44,6 @@ const ProjectRoom = ({ projectTitle }) => {
 			const peaks = new Array(peak.length);
 			const peaks_ = peaks.map(p => false);
 			setPeak(peaks_);
-			// dispatch(popModal());
 	} else {
 			const peaks = projects.map(p => p.title.toLowerCase() === projectTitle);
 			setPeak(peaks);

@@ -1,6 +1,11 @@
 import { useRef, useEffect, useCallback } from 'react'
 import styled from 'styled-components'
 
+// - Wave
+//
+// - adapted from "Wavy Header" by Charles Ojukwu
+// - https://codepen.io/cojdev/details/PjYPKv
+
 const Lines = () => {
 	const nodes = 3;
 	const waves = [];

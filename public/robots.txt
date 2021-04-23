@@ -1,2 +1,13 @@
 User-agent: *
 Disallow: *
+
+User-agent: Googlebot
+User-agent: Yeti
+Disallow: *
+Allow: /
+Allow: /main
+Allow: /concept
+Allow: /making
+Allow: /project
+
+Sitemap: https://altmshfkgudtjr.github.io/sitemap.xml

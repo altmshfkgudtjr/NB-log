@@ -1,134 +1,188 @@
 {
-	"name": [
-		"Hyungseok Kim",
-		"김형석",
-		"金亨錫",
-		"NB"
-	],
-	"introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 프론트엔드 개발을 하고 있으며, 사용자를 즐겁게 하는 창의적인 작업을 하는 모든 것들을 즐깁니다. 또한, 지금보다 더 나은 결과를 위해서 새로운 것을 배우는 것을 마다하지 않으며, 항상 개발자와 사용자에게 최적의 경험을 전달해주기 위해서 노력하고 있습니다.",
-	"url": {
-		"github": "https://github.com/altmshfkgudtjr",
-		"blog": "https://blog.naver.com/PostList.nhn?blogId=altmshfkgudtjr",
-		"velog": "https://velog.io/@altmshfkgudtjr",
-		"instagram": "https://www.instagram.com/brother_rock_/",
-		"email": "mailto:altmgudtjr@gmail.com"
-	},
-	"keyword": [
-		"기본은 항상 중요하다고 생각하고 있습니다.",
-		"그림 그리는 것외에도 결과물을 만들어내는 것을 좋아합니다.",
-		"프론트엔드뿐만 아니라, 개발하는 모든 것을 즐깁니다.",
-		"맛있는 것을 먹으러 돌아다니는 것을 좋아합니다."
-	],
-	"experience": [
-		{
-			"date": "2020.12 ~ 2020.12",
-			"place": "KISTI-세종대학교 빅데이터·AI 겨울학교",
-			"content": "KISTI-세종대학교 주관 빅데이터·AI 겨울학교 과정 수료"
-		},
-		{
-			"date": "2020.07 ~ 2020.09",
-			"place": "AI 양재R&D혁신허브 인공지능 캠프",
-			"content": "AI 양재 허브 교육프로그램 실무 단계('AI College') 수료"
-		},
-		{
-			"date": "2020.04 ~ 2020.08",
-			"place": "Large scale social media data mining lab",
-			"content": "세종대학교 데이터사이언스학과 부속 연구실 학사 연구원"
-		},
-		{
-			"date": "2020.01 ~ 2020.01",
-			"place": "2020 세종창의인재스쿨",
-			"content": "세종대학교 창의인재스쿨 Python 조교로 활동"
-		}
-	],
-	"prizes": [
-		{
-			"title": "SW 스타트업 창업 챌린지 공모전",
-			"management": "KOSA 한국소프트웨어산업협회",
-			"date": "2020.12",
-			"content": "동상"
-		},
-		{
-			"title": "SW·AI 융합 메이커톤",
-			"management": "세종대학교",
-			"date": "2020.12",
-			"content": "특별상"
-		},
-		{
-			"title": "제8회 교내 공학교육인증 창의설계 경진대회",
-			"management": "세종대학교",
-			"date": "2019.12",
-			"content": "3등"
-		},
-		{
-			"title": "제6회 세종대학교 컴퓨터공학과 학술제",
-			"management": "세종대학교",
-			"date": "2019.12",
-			"content": "2등"
-		},
-		{
-			"title": "제6회 SW코딩경시대회",
-			"management": "세종대학교",
-			"date": "2019.12",
-			"content": "3등"
-		},
-		{
-			"title": "세종대학교 캠퍼스타운 활성화 아이디어 공모전",
-			"management": "세종대학교",
-			"date": "2019.12",
-			"content": "장려상"
-		},
-		{
-			"title": "세종 창업아이디어 페스티벌",
-			"management": "세종대학교",
-			"date": "2019.12",
-			"content": "아이디어상"
-		},
-		{
-			"title": "제8회 창의설계경진대회",
-			"management": "세종대학교",
-			"date": "2019.12",
-			"content": "장려상"
-		},
-		{
-			"title": "세종 인공지능 아이디어 경진대회",
-			"management": "세종대학교",
-			"date": "2019.10",
-			"content": "대상"
-		},
-		{
-			"title": "세종대학교 소프트웨어융합대학 학술제",
-			"management": "세종대학교",
-			"date": "2019.09",
-			"content": "대상"
-		}
-	],
-	"skills": {
-		"Application": [
-			"Web Crawling",
-			"Embedded Development"
-		],
-		"Frontend": [
-			"Typescript, React, Vue, JQuery, SCSS",
-			"Webpack, Rollup, Babel",
-			"Swift",
-			"Adobe XD, Illustrator, Photoshop"
-		],
-		"Backend": [
-			"Node.js - Express",
-			"Python - Flask",
-			"Database - MongoDB, MySQL"
-		],
-		"Etc": [
-			"MacOS, Windows, Linux(Ubuntu)",
-			"Notion, Slack, Trello, Jandi"
-		]
-	},
-	"education": [
-		{
-			"date": "2016.03 ~ current",
-			"content": "컴퓨터공학과 전공 재학 중",
-			"management": "세종대학교"
-		}
-	]
+  "name": ["Hyungseok Kim", "김형석", "金亨錫", "NB"],
+  "introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 개발을 담당하고 있으며, 항상 개발자와 사용자에게 <a title='User을 위한, Uxer을 위한 - 김형석' href='https://velog.io/@altmshfkgudtjr/User%EC%9D%84-%EC%9C%84%ED%95%9C-Uxer%EC%9D%84-%EC%9C%84%ED%95%9C' target='_blank'><mark>최적의 경험을 전달</mark></a>해주려는 자세로 개발하고 있습니다.\n\n스타트업에서 웹 서비스를 기획/개발/배포/운영하고 있으며, 비즈니스 가치를 고객에게 온전히 전달하기 위해서 다양한 직무의 구성원들과 <mark>능동적으로 커뮤니케이션</mark>하며, 협업해왔습니다.\n\n일의 생산성을 높이는 것을 중요시하여 <mark>회사 혹은 팀의 프로세스를 개선</mark>하려는 시도를 적극적으로 합니다.",
+  "url": {
+    "github": "https://github.com/altmshfkgudtjr",
+    "blog-velog": "https://velog.io/@altmshfkgudtjr",
+    "blog-naver": "https://blog.naver.com/PostList.nhn?blogId=altmshfkgudtjr"
+  },
+  "keyword": [
+    "회사와 팀의 성장에 도움이 되는 일을 최우선시하며, 이를 통해 개발자와 비즈니스 가치를 창출합니다.",
+    "능동적인 커뮤니케이션 및 협업으로 문제 해결과 비즈니스 성장에 적극적으로 뛰어들고 있습니다.",
+    "기본은 항상 중요하다고 생각하고 있습니다.",
+    "프론트엔드뿐만 아니라, 개발하는 모든 것을 즐깁니다."
+  ],
+  "education": [
+    {
+      "date": "2016.03 ~ 2023.02",
+      "content": "<ul><li>컴퓨터공학과 전공 졸업 예정입니다.</li>\n<li>전공 평점 <strong>4.1 / 4.5</strong></li></ul>",
+      "management": "세종대학교"
+    }
+  ],
+  "experience": [
+    {
+      "date": "2022.02 ~ 현재 재직 중",
+      "place": "SPI",
+      "href": "https://seoulpi.io/",
+      "content": "<mark>전 세계 리츠 데이터와 결합 및 고도화한 상업용 부동산 콘텐츠&데이터 분석 서비스</mark>\n\n현재 SPI에서 다루는 프로덕트 및 백오피스의 전반적인 개발, FE 관련 작업에 대한 GCP 배포 및 서비스 운영을 책임지고 있습니다.<ul><li>SPI 프로덕트 FE 설계 및 개발</li><li>SPI 사내 백오피스 구축</li><li>국내외 자산 시각화를 위한 Map 라이브러리 개발 및 Github Organization Packages에 배포</li></ul>",
+      "role": "Frotend Software Engineer"
+    },
+    {
+      "date": "2021.06 ~ 2022.02",
+      "place": "클래스유",
+      "href": "https://www.classu.co.kr/new",
+      "content": "<mark>누적 회원 수 110만, 누적 학습회수 300만 건 이상의 에듀테크 서비스</mark>\n\n입사 후, 기존 PHP Laravel 기반의 서비스를 Next.js의 React 기반으로 주도적으로 마이그레이션하였습니다.\n또한 어플리케이션을 기존 IDC 물리서버 기반에서 AWS 클라우드 기반으로 이전시킴으로서 프로덕트의 CI/CD 자동화를 주도적으로 진행하여 적용하였습니다. 이처럼 높은 역량을 보여내 짧은 기간에 FE 팀 리드를 인정받아 맡게 되었습니다.<ul><li>React기반 레거시 마이그레이션</li><li>AWS 및 Github-Actions을 이용한 배포 자동화</li><li>디자인시스템 CDS 개발</li><li>디바이스별 반응형 사이즈 대응 및 앱간 Bridge 통신 진행</li></ul>",
+      "role": "Frotend Software Engineer & FE Team Lead"
+    }
+  ],
+  "otherExperience": [
+    {
+      "date": "2021.04 ~ 현재",
+      "place": "react-epub-viewer 오픈소스 운영",
+      "href": "https://github.com/altmshfkgudtjr/react-epub-viewer",
+      "content": "전자책 Epub 파일을 볼 수 있는 Typescript 기반 오픈소스 제작자로서 현재까지 지속적으로 운영 중입니다.",
+      "role": "Maintainer"
+    },
+    {
+      "date": "2020.07 ~ 2020.09",
+      "place": "AI 양재R&D혁신허브 인공지능 캠프",
+      "content": "AI 양재 허브 교육프로그램 실무 단계('AI College') 수료\n\n팀 리더로서 영상과 관련된 댓글순 정렬기능 제작의 목적으로 LDA를 이용하여 Contents-based-Recommendation-System을 개발하였습니다. ",
+      "role": "Team Leader"
+    },
+    {
+      "date": "2020.04 ~ 2020.08",
+      "place": "Large scale social media data mining lab",
+      "content": "세종대학교 데이터사이언스학과 부속 연구실 학부 연구생으로 근무하였습니다.",
+      "role": "Front End"
+    },
+    {
+      "date": "2020.12 ~ 2021.06",
+      "place": "나노북",
+      "content": "창업 멤버로서 전자책 분할 대여 및 판매 서비스의 전반적인 FE 개발 및 Epub 뷰어 개발을 진행하였습니다.",
+      "role": "Front End"
+    },
+    {
+      "date": "2020.01 ~ 2020.02",
+      "place": "2020 세종창의인재스쿨",
+      "content": "세종대학교 창의인재스쿨 Python 조교로 활동였습니다.",
+      "role": "Teaching Assistant"
+    },
+    {
+      "date": "2019 ~ 2021",
+      "place": "총 17회의 공모전 활동 중 13회 수상",
+      "content": "세종대학교 외 KOSA 한국소프트웨어산업협회 주관",
+      "role": "Front End"
+    },
+    {
+      "date": "2019 ~ 2021",
+      "place": "총 3회의 해커톤 중 2회 수상",
+      "content": "세종대학교 주관",
+      "role": "Front End"
+    },
+    {
+      "date": "",
+      "place": "더 많은 프로젝트 보러가기 👉",
+      "href": "/project",
+      "content": "",
+      "role": ""
+    }
+  ],
+  "prizes": [
+    {
+      "title": "제10회 세종대학교 SW·AI 해커톤",
+      "management": "세종대학교",
+      "date": "2021.12",
+      "content": "은상"
+    },
+    {
+      "title": "세종 피칭 & 멘토링데이",
+      "management": "세종대학교",
+      "date": "2021.03",
+      "content": "장려상"
+    },
+    {
+      "title": "제9회 세종대학교 SW·AI 해커톤",
+      "management": "세종대학교",
+      "date": "2020.12",
+      "content": "은상"
+    },
+    {
+      "title": "SW 스타트업 창업 챌린지 공모전",
+      "management": "KOSA 한국소프트웨어산업협회 (w/ 과학기술정보통신부)",
+      "date": "2020.12",
+      "content": "동상"
+    },
+    {
+      "title": "SW·AI 융합 메이커톤",
+      "management": "세종대학교",
+      "date": "2020.12",
+      "content": "특별상"
+    },
+    {
+      "title": "제8회 교내 공학교육인증 창의설계 경진대회",
+      "management": "세종대학교",
+      "date": "2019.12",
+      "content": "3등"
+    },
+    {
+      "title": "제6회 세종대학교 컴퓨터공학과 학술제",
+      "management": "세종대학교",
+      "date": "2019.12",
+      "content": "2등"
+    },
+    {
+      "title": "제6회 SW코딩경시대회",
+      "management": "세종대학교",
+      "date": "2019.12",
+      "content": "3등"
+    },
+    {
+      "title": "세종대학교 캠퍼스타운 활성화 아이디어 공모전",
+      "management": "세종대학교",
+      "date": "2019.12",
+      "content": "장려상"
+    },
+    {
+      "title": "세종 창업아이디어 페스티벌",
+      "management": "세종대학교",
+      "date": "2019.12",
+      "content": "아이디어상"
+    },
+    {
+      "title": "제8회 창의설계경진대회",
+      "management": "세종대학교",
+      "date": "2019.12",
+      "content": "장려상"
+    },
+    {
+      "title": "세종 인공지능 아이디어 경진대회",
+      "management": "세종대학교",
+      "date": "2019.10",
+      "content": "대상"
+    },
+    {
+      "title": "세종대학교 소프트웨어융합대학 학술제",
+      "management": "세종대학교",
+      "date": "2019.09",
+      "content": "대상"
+    }
+  ],
+  "skills": {
+    "Application": ["Web Crawling"],
+    "Frontend": [
+      "Typescript, React, JQuery",
+      "Next.js, Vite.js",
+      "Webpack, Babel",
+      "Swift",
+      "Figma, Zeplin, Adobe XD, Illustrator",
+      "Jest"
+    ],
+    "Backend": ["Express", "Flask", "MongoDB"],
+    "DevOps": [
+      "AWS (EC2, ECS, S3)",
+      "GCP (Cloud Run, Cloud Functions, Cloud Build, Artifact Registry)",
+      "Docker, Docker-Compose"
+    ],
+    "Data": ["SQL", "Google Analytics", "Google Tag Manager", "Amplitude"]
+  }
 }

@@ -1,25 +1,27 @@
-import { Helmet } from "react-helmet-async"
+import { Helmet } from "react-helmet-async";
 // containers
-import Name from 'containers/profile/Name'
-import Content from 'containers/profile/Content'
-import Liker from 'containers/profile/Liker'
+import Name from "containers/profile/Name";
+import Content from "containers/profile/Content";
+import Liker from "containers/profile/Liker";
 // components
-import Layout from 'components/profile/Layout'
+import Layout from "components/profile/Layout";
 
 const ProfilePage = () => {
-	return (<>
-		<Helmet>
-			<title>NB#log - Profile</title>
-		</Helmet>
+  return (
+    <>
+      <Helmet>
+        <title>프론트엔드 개발자 김형석입니다.</title>
+      </Helmet>
 
-		<Name />
-		
-		<Layout>
-			<Liker />
+      <Name />
 
-			<Content />
-		</Layout>
-	</>);
-}
+      <Layout>
+        <Liker />
 
-export default ProfilePage
+        <Content />
+      </Layout>
+    </>
+  );
+};
+
+export default ProfilePage;

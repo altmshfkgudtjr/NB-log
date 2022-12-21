@@ -2,8 +2,12 @@ import styled from "styled-components";
 // lib
 import media from "lib/styles/media";
 
-const BtnWrapper = ({ children }) => {
-  return <Container role="list">{children}</Container>;
+const Email = () => {
+  return (
+    <Container>
+      <strong>E-Mail :</strong>&nbsp;<span>altmgudtjr@gmail.com</span>
+    </Container>
+  );
 };
 
 const Container = styled.div`
@@ -12,9 +16,14 @@ const Container = styled.div`
   align-items: center;
   margin: 2rem 0 3rem 0;
 
+  strong {
+    font-weight: 500;
+    color: #ff9800;
+  }
+
   ${media.small} {
     justify-content: space-between;
   }
 `;
 
-export default BtnWrapper;
+export default Email;

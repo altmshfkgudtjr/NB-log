@@ -1,41 +1,41 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 // lib
-import animations from 'lib/styles/animations'
-import media from 'lib/styles/media'
+import animations from "lib/styles/animations";
+import media from "lib/styles/media";
 
 const MouseIcon = () => {
-	return (
-		<Mouse />
-	);
-}
+  return <Mouse />;
+};
 
 const Mouse = styled.div`
-	position: absolute;
-	bottom: 2rem;
-	left: 0;
-	right: 0;
-	margin: auto;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 32px;
   height: 48px;
   border-radius: 48px;
   background: transparent;
   border: 2px solid black;
-  
-  &:before {	// dot
-    content: '';
+
+  &:before {
+    // dot
+    content: "";
     position: absolute;
     width: 3px;
     height: 3px;
-    border-radius :50%;
+    border-radius: 50%;
     background: #000;
     left: 50%;
     top: 2px;
     transform: translate(-50%, 0);
     animation: ${animations.mouseWheel} 1.8s linear infinite;
   }
-  
-  &:after {	// wheel
-    content: '';
+
+  &:after {
+    // wheel
+    content: "";
     position: absolute;
     width: 3px;
     height: 14px;
@@ -46,13 +46,13 @@ const Mouse = styled.div`
     transform: translate(-50%, 0);
   }
 
-	${media.small} {
-		display: none;
-	}
+  ${media.small} {
+    display: none;
+  }
 
-	@media (max-height: 1000px) {
-		display: none;
-	}
+  @media (max-height: 928px) {
+    display: none;
+  }
 `;
 
-export default MouseIcon
+export default MouseIcon;

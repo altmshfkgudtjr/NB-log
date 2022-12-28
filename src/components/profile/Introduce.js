@@ -14,6 +14,7 @@ const Content = styled.div`
   white-space: pre-wrap;
 
   mark {
+    display: inline-block;
     padding: 0 4px 2px;
     margin: 0 2px;
     color: #fff;

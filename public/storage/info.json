@@ -1,6 +1,6 @@
 {
   "name": ["Hyungseok Kim", "김형석", "金亨錫", "NB"],
-  "introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 개발을 담당하고 있으며, 항상 개발자와 사용자에게 <a title='User을 위한, Uxer을 위한 - 김형석' href='https://velog.io/@altmshfkgudtjr/User%EC%9D%84-%EC%9C%84%ED%95%9C-Uxer%EC%9D%84-%EC%9C%84%ED%95%9C' target='_blank'><mark>최적의 경험을 전달</mark></a>해주려는 자세로 개발하고 있습니다.\n\n스타트업에서 웹 서비스를 기획/개발/배포/운영하고 있으며, 비즈니스 가치를 고객에게 온전히 전달하기 위해서 다양한 직무의 구성원들과 <mark>능동적으로 커뮤니케이션</mark>하며, 협업해왔습니다.\n\n일의 생산성을 높이는 것을 중요시하여 <mark>회사 혹은 팀의 프로세스를 개선</mark>하려는 시도를 적극적으로 합니다.",
+  "introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 개발을 담당하고 있으며, 항상 개발자와 사용자에게 <a title='User을 위한, Uxer을 위한 - 김형석' href='https://velog.io/@altmshfkgudtjr/User%EC%9D%84-%EC%9C%84%ED%95%9C-Uxer%EC%9D%84-%EC%9C%84%ED%95%9C' target='_blank'><mark>최적의 경험을 전달</mark></a>해주려는 자세로 개발하고 있습니다.\n\n스타트업에서 웹 서비스를 기획/개발/배포/운영하고 있으며, 비즈니스 가치를 고객에게 온전히 전달하기 위해서 다양한 직무의 구성원들과 <mark>능동적으로 커뮤니케이션</mark>하며, 협업해왔습니다.\n\n일의 생산성을 높이는 것을 중요시하여 <a title='yarn2와 함께 PnP(Plug`n`Play)를 적용해보자. (feat. Typescript)' href='https://velog.io/@altmshfkgudtjr/yarn2%EC%99%80-%ED%95%A8%EA%BB%98-Plug-n-Play%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%B4%EB%B3%B4%EC%9E%90' taret='_blank'><mark>회사 혹은 팀의 프로세스를 개선</mark></a>하려는 시도를 적극적으로 합니다.",
   "url": {
     "github": "https://github.com/altmshfkgudtjr",
     "blog-velog": "https://velog.io/@altmshfkgudtjr",
@@ -24,7 +24,7 @@
       "date": "2022.02 ~ 현재 재직 중",
       "place": "SPI",
       "href": "https://seoulpi.io/",
-      "content": "<mark>전 세계 리츠 데이터와 결합 및 고도화한 상업용 부동산 콘텐츠&데이터 분석 서비스</mark>\n\n현재 SPI에서 다루는 프로덕트 및 백오피스의 전반적인 개발, FE 관련 작업에 대한 GCP 배포 및 서비스 운영을 책임지고 있습니다.<ul><li>SPI 프로덕트 FE 설계 및 개발</li><li>SPI 사내 백오피스 구축</li><li>국내외 자산 시각화를 위한 Map 라이브러리 개발 및 Github Organization Packages에 배포</li></ul>",
+      "content": "<mark>전 세계 리츠 데이터와 결합 및 고도화한 상업용 부동산 콘텐츠&데이터 분석 서비스</mark>\n\n현재 FE 개발을 혼자 진행함으로서 프로덕트 및 백오피스의 전체 구조 설계부터 개발 및 테스트 외 서버 배포까지 FE관련 모든 작업을 책임지고 있습니다.<ul><li>React 기반 모든 FE 프로젝트 설계 및 개발 담당 (Next.js, Vite.js)</li><li>SPI 사내 백오피스 구축 (부동산 데이터 & CS)</li><li>국내외 자산 시각화를 위한 Map 라이브러리 개발 및 Github Organization Packages에 배포</li><li>GCP의 Cloud Run, Artifact Registry, Cloud Build를 통한 FE단 CI/CD 배포 자동화</li><li><a href='https://velog.io/@altmshfkgudtjr/File-Based-Routing-System' target='_blank'>File-Based Routing System 개발</a></li></ul>",
       "role": "Frotend Software Engineer"
     },
     {
@@ -68,18 +68,6 @@
       "role": "Teaching Assistant"
     },
     {
-      "date": "2019 ~ 2021",
-      "place": "총 17회의 공모전 활동 중 13회 수상",
-      "content": "세종대학교 외 KOSA 한국소프트웨어산업협회 주관",
-      "role": "Front End"
-    },
-    {
-      "date": "2019 ~ 2021",
-      "place": "총 3회의 해커톤 중 2회 수상",
-      "content": "세종대학교 주관",
-      "role": "Front End"
-    },
-    {
       "date": "",
       "place": "더 많은 프로젝트 보러가기 👉",
       "href": "/project",
@@ -88,6 +76,12 @@
     }
   ],
   "prizes": [
+    {
+      "title": "제14회 창의설계경진대회",
+      "management": "세종대학교",
+      "date": "2022.12",
+      "content": "대상"
+    },
     {
       "title": "제10회 세종대학교 SW·AI 해커톤",
       "management": "세종대학교",

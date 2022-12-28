@@ -59,6 +59,7 @@ const Container = styled.div`
     white-space: pre-wrap;
 
     mark {
+      display: inline-block;
       position: relative;
       padding: 4px 4px 6px;
       background-color: transparent;
@@ -77,6 +78,17 @@ const Container = styled.div`
         background: linear-gradient(90deg, #d0ecff 0%, #f6f6f6 100%);
         transform: skewY(-0.4deg);
         z-index: -1;
+      }
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+      text-underline-position: under;
+      transition: 0.1s ease;
+
+      &:hover {
+        color: #025ee8;
       }
     }
   }

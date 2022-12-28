@@ -1,227 +1,289 @@
 {
-	"projects": [
-		{
-			"title": "Q O J",
-			"img": "https://user-images.githubusercontent.com/47492535/103151381-0995bb00-47c1-11eb-89ef-a33e53f53d8d.png",
-			"info": ["SQL Online Judge System"],
-			"position": ["Front-end", "Database design"],
-			"date": ["MAY", "2020"],
-			"collaborator": ["NB", "X", "837477"],
-			"url": "https://www.notion.so/QOJ-398709cc3e6c4f18ae081c1ea8d9c88b",
-			"color": "#0C88A0",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103370717-dc267580-4b10-11eb-8399-96c411326f7f.png",
-					"size": "1664×836"
-				},
-				{
-					"type": "text",
-					"content": "QOJ는 Query + Online Judge System의 합성어로, 온라인으로 SQL 실행 및 문제를 풀어볼 수 있는 플랫폼입니다. 본 프로젝트는 세종대학교를 다니면서 알고리즘 문제에 대한 OJ 시스템은 존재하는 반면, SQL문에 대한 OJ 시스템이 부재하여 직접 만들어보게 되었습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364588-8a2a2380-4b01-11eb-959f-c602b7003af4.png",
-					"size": "824×595"
-				},
-				{
-					"type": "text",
-					"content": "위 사진처럼, 실제 문제를 푸는 공간은 3구간으로 나뉘어지는 레이아웃을 선택하였습니다. 이 때 좌우 레이아웃은 조절이 가능하도록 만들어, 사용자의 편의성을 증가시켰습니다. 또한 SQL 인젝션에 대한 공격 방지 및 데이터베이스의 무결성을 보장하기 위해서 MySQL의 트랜잭션 기능을 활용하는 등의 여러가지를 고려하여 제작하였습니다."
-				},
-				{
-					"type": "text",
-					"content": "이번 단계에서는 아쉽게도 SELECT문 밖에 지원하지 않지만, Docker를 통해서 사용자가 쿼리문을 실행시킬 때마다 환경이 구축된 컨테이너에서 테스트를 실행시킨다면, Insert 및 Update문도 지원할 수 있을 것이라 예상이 들었습니다. 추후에 이 프로젝트가 재개된다면 이 아이디어를 적용시킬 예정입니다."
-				},
-				{
-					"type": "text",
-					"content": ""
-				}
-			]
-		},
-		{
-			"title": "STUDIO",
-			"img": "https://raw.githubusercontent.com/altmshfkgudtjr/NB_Portfolio_2020/master/img.png",
-			"info": ["Portfolio template like", "a studio"],
-			"position": ["Toy Project"],
-			"date": ["JANUARY", "2020"],
-			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr/NB_Portfolio_2020",
-			"color": "#707070",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364593-8bf3e700-4b01-11eb-9e91-f4a33d0d2310.png",
-					"size": "800×450"
-				},
-				{
-					"type": "text",
-					"content": "NB#log 사이트의 첫 번째 배포판입니다. STUDIO는 제가 Vue.js를 새롭게 공부하고자 시작한 프로젝트입니다. Back-end는 Node.js의 Express를 호스팅 서버는 Heroku를 사용하여 배포하였습니다. 간단한 프로젝트를 기획부터 배포까지 처리해보면서, 다시 한번 전반적인 개발 프로세스를 정리 할 수 있는 경험이 되었습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364592-8b5b5080-4b01-11eb-94dc-372d1d2da85e.png",
-					"size": "800×400"
-				},
-				{
-					"type": "text",
-					"content": "NB#log에서 '#' 은 이 프로젝트를 진행하면서 탄생하였습니다. 보통 '#(해시태그)' 는 사람을 태그하기 위해서 사용됩니다. 이와 같이, 본 프로젝트에서는 해시태그는 개발자와 사용자의 Connection의 의미를 담고 있으며, 사용자와의 소통을 잘 할 수 있는 개발자가 되기 위해서 프로젝트 전반적으로 '#' 을 사용하였습니다."
-				}
-			]
-		},
-		{
-			"title": "SIGNUS",
-			"img": "https://user-images.githubusercontent.com/47492535/103151341-a1df7000-47c0-11eb-994e-36cf8dc83e96.png",
-			"info": ["Social Network Service In 20s"],
-			"position": ["Front-end"],
-			"date": ["NOVEMBER", "2020"],
-			"collaborator": ["Team IML"],
-			"url": "https://github.com/altmshfkgudtjr/SIGNUS_client",
-			"color": "#43A483",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103264231-6fff2100-49ed-11eb-9e8b-0bc93ec9c336.png",
-					"size": "718×467"
-				},
-				{
-					"type": "text",
-					"content": "인터넷 플랫폼의 접근성이 점점 좋아지면서, 사용자가 필요로 하는 수 많은 정보는 상당히 많은 사이트에서 게시되고 있습니다. 하지만 이로 인해서 원하는 정보를 탐색하는 과정은 오히려 점점 더 불편해지고 있습니다. 그렇게 시작된 프로젝트 SIGNUS는 나와 같은 20대 청년들에게 관심있는 정보들을 지속적으로 수집 및 통합, 인공지능을 이용해서 사용자에게 맞춤 정보를 추천해줍니다."
-				},
-				{
-					"type": "text",
-					"content": "이 프로젝트에서는 기존의 유사 서비스인 SOOJLE을 토대로, UI/UX를 개선시키는 작업을 진행하였습니다. 기존 순수 Javascript로 제작한 것과 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103264234-7097b780-49ed-11eb-99f0-18f2a7af5f60.png",
-					"size": "718×479"
-				}
-			]
-		},
-		{
-			"title": "SOOJLE",
-			"img": "https://user-images.githubusercontent.com/47492535/103151347-b02d8c00-47c0-11eb-97d2-06ff3ab9ae34.png",
-			"info": ["Univ. Sejong Information Service", "by A.I"],
-			"position": ["Front-end", "Data Crawler"],
-			"date": ["DECEMBER", "2019"],
-			"collaborator": ["Team IML"],
-			"url": "https://github.com/altmshfkgudtjr/SOOJLE_FRONT",
-			"color": "#CC372B",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364594-8bf3e700-4b01-11eb-9161-a6d5a6e6ff79.png",
-					"size": "800×572"
-				},
-				{
-					"type": "text",
-					"content": "세종대학교에서는 학생에게 필요한 정보를 여러 사이트에 공지하고 있습니다. 하지만 시간이 갈 수록 학생들이 필요한 정보들이 너무 퍼져있어 찾기 힘들다는 피드백을 받게 되었고, SOOJLE 프로젝트가 시작되었습니다."
-				},
-				{
-					"type": "text",
-					"content": "본 프로젝트는 세종대학교 구성원이라는 타겟을 선정하여, 해당 구성원들에게 필요한 모든 정보를 A.I를 통해서 체계화 시켰습니다. 또한 A.I를 사용한 사용자 맞춤 추천 시스템을 통해서 빠르고 쉽게 나에게 필요한 정보를 받아 볼 수 있도록 제작하였습니다."
-				}
-			]
-		},
-		{
-			"title": "MODAKBUL",
-			"img": "https://user-images.githubusercontent.com/47492535/103151349-b1f74f80-47c0-11eb-8634-56b12b04f241.png",
-			"info": ["SW Convergence College Official Site"],
-			"position": ["Front-end"],
-			"date": ["AUGUST", "2020"],
-			"collaborator": ["Team IML", "X", "James Jung"],
-			"url": "https://github.com/altmshfkgudtjr/MODAKBUL_INTEGRATE",
-			"color": "#455484",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364596-8c8c7d80-4b01-11eb-8ab7-d334f1a188ec.png",
-					"size": "800×370"
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364598-8d251400-4b01-11eb-9590-b6955a5ddeb3.png",
-					"size": "800×378"
-				},
-				{
-					"type": "text",
-					"content": "본 프로젝트는 소프트웨어융합대학 제 3대 학생회 번영에서 주최하는 공모전으로서, 세종대학교 소프트웨어 융합 대학 홈페이지 개발의 결과물입니다. 본 프로젝트에서는 기존의 카테고리식 게시판 시스템을 벗어나 Tagging 기반의 구조로 설계하였습니다. 이 구조를 통해서 자동으로 게시글이 게시판으로 다중 분류가 되어지는 시스템을 가졌습니다."
-				},
-				{
-					"type": "text",
-					"content": "또한 대학 홈페이지로서 공지, 투표 및 커뮤니티 기능이 도입되어있어, 학생회와 학우 간의 소통이 원활할 수 있도록 프로젝트를 진행하였습니다. 또한 다크 모드 기능을 추가하여 사용자 취향에 맞도록 서비스를 이용할 수 있도록 제작하였습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103364600-8d251400-4b01-11eb-97fa-039adb28e8bd.png",
-					"size": "800×564"
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103371215-3ecc4100-4b12-11eb-80b5-92151b5f3732.png",
-					"size": "400×600"
-				}
-			]
-		},
-		{
-			"title": "ELE POSITION",
-			"img": "https://user-images.githubusercontent.com/47492535/103151348-b15eb900-47c0-11eb-9edd-f1e251704ab2.png",
-			"info": ["Stained Glass"],
-			"position": ["Toy Project"],
-			"date": ["NOVEMBER", "2020"],
-			"collaborator": ["NB"],
-			"url": "https://github.com/altmshfkgudtjr/ELEposition",
-			"color": "#CCB12B",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103264228-6e355d80-49ed-11eb-8eab-7ded7ebb94c4.png",
-					"size": "719×467"
-				},
-				{
-					"type": "text",
-					"content": "ELEposition(Element position)은 Apple의 Big Sur OS로부터 영감을 얻은 프로젝트입니다. 특정 DOM Element의 절대 좌표를 구해야하는 작업을 진행하던 와중, Background filter 효과를 씌운 여러 개의 BOX가 랜덤적으로 화면에 나타나면 예쁠 것 같다는 생각이 들었습니다. 그 결과, 여러 색이 겹쳐서 또 다른 색을 만들어 낸다는 것, Box 뒤 쪽에 있는 다른 Box들이 blur 효과로 퍼져서 흐리게 보이는 것이 합쳐져서 새로운 작품이 탄생하게 되었습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103264229-6f668a80-49ed-11eb-942f-2b844cd496f1.png",
-					"size": "327×271"
-				},
-				{
-					"type": "text",
-					"content": "하지만 여기서 background 색상이 몇 개 없다면, 자칫하다간 단조로운 느낌이 들 것 같아서, 많고 다양한 색을 알아보았고, 밝은 Color가 중심이 되도록 최종 선택하여 제작하였습니다. 또한, 본 프로젝트는 \"의도치않은 창조\" 라는 느낌을 바탕으로 제작하였기 때문에 Box Dragging 할 수 있는 기능은 몇 번의 고민 끝에 제외하기로 결정하였고, 배경화면 또한 물감이 쏟아지는 사진으로 선택하여 해당 느낌이 사용자에게 전달될 수 있도록 제작하였습니다."
-				},
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103264230-6fff2100-49ed-11eb-9fc6-3a0c8583e46a.png",
-					"size": "448×672"
-				}
-			]
-		},
-		{
-			"title": "SEJABO",
-			"img": "https://user-images.githubusercontent.com/47492535/103371704-7f788a00-4b13-11eb-97a5-968b1526f047.png",
-			"info": ["Sejong University Daejabo"],
-			"position": ["Front-end"],
-			"date": ["JUNE", "2019"],
-			"collaborator": ["Team IML"],
-			"url": "https://github.com/altmshfkgudtjr/SEJABO",
-			"color": "#9764B3",
-			"post": [
-				{
-					"type": "image",
-					"content": "https://user-images.githubusercontent.com/47492535/103371704-7f788a00-4b13-11eb-97a5-968b1526f047.png",
-					"size": "700×393"
-				},
-				{
-					"type": "text",
-					"content": "세자보란, 세종대학교 + 대자보의 합성어로 세종대학교 재학생들을 위한 홍보용 SNS 서비스입니다. 대학교 대자보의 기존 오프라인 포스터 형식의 문제점을 파악하여 웹으로 구현, 포스터 게시물들의 자동화, 홍보에 맞는 시각성을 가지는 UI/UX을 포괄하는 시스템을 구현하였습니다."
-				},
-				{
-					"type": "text",
-					"content": "해당 프로젝트는 제가 Front-end 포지션을 처음 맡아본 프로젝트로서 Modal이라는 생소한 개념을 마주친 것이 제일 기억에 남는 부분입니다. 그렇게 SEJABO를 완성시키고 나서부터 본격적으로 Front-end에 흥미를 가지기 시작되었습니다."
-				}
-			]
-		}
-	]
+  "projects": [
+    {
+      "title": "React-Epub-Viewer",
+      "img": "https://user-images.githubusercontent.com/47492535/209841638-bab1567b-eb37-48b3-b920-87589d5d88be.png",
+      "info": ["Epub Viewer React Open-Source"],
+      "position": ["Maintainer"],
+      "date": ["APR", "2021"],
+      "collaborator": ["NB"],
+      "url": "https://github.com/altmshfkgudtjr/react-epub-viewer",
+      "color": "#4ABF98",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/209841642-1b5fe863-16c6-4505-905a-eae2661fcb40.png",
+          "size": "1000×640"
+        },
+        {
+          "type": "text",
+          "content": "현재 국제 디지털 출판 포럼에서 정한 자유 전자서적 표준을 바탕으로 React에서 사용할 수 있는 뷰어를 오픈소스화하여 운영중입니다. 해당 활동을 통하여 오픈소스에 대한 지식과 그 문화에 대해서 크게 배웠으며, 그 후에도 꾸준히 관리 중입니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/209842931-c21312a5-9b83-4cd3-9012-4dc8c9571adc.png",
+          "size": "1714x1000"
+        }
+      ]
+    },
+    {
+      "title": "trAIner",
+      "img": "https://user-images.githubusercontent.com/47492535/209570977-fb65f305-9001-4b7a-a4f6-2a8575c152a7.png",
+      "info": ["AI Algorithm Learning Platform"],
+      "position": ["Front-end", "Designer"],
+      "date": ["DEC", "2022"],
+      "collaborator": ["NB", "X", "IML", "X", "Tab"],
+      "url": "https://github.com/altmshfkgudtjr/trAIner",
+      "color": "#482E8C",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/29897277/209434008-f61cc54b-3452-407e-bb9c-41886349e648.png",
+          "size": "1207×624"
+        },
+        {
+          "type": "text",
+          "content": "trAIner(트레이너)는 학습자의 관심도, 취약점 패턴을 분석하여 사용자가 좀 더 효율적으로 학습할 수 있도록 알고리즘 문제를 추천해주는 AI 기반의 학습 플랫폼입니다. 본 프로젝트에서 본인은 디자인 작업 및 프론트엔드 설계 및 개발, 그리고 도메인 호스팅 및 클라우드 배포까지의 역할을 담당하였습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/29897277/208668718-85373146-6d3a-4fac-815e-073d94b78aaa.png",
+          "size": "1212×438"
+        },
+        {
+          "type": "text",
+          "content": "트레이너는 자연어처리(NLP), Factorization Machine 기반의 딥러닝 기술을 통해 사용자와 알고리즘 문제 사이의 상관관계를 분석합니다. 유저들의 각 문제에 대한 클릭률(CTR), 취약점(Vulnerability), 관심사(Topic) 정보를 예측하여 각 사용자들에게 최적의 학습 문제를 추천할 수 있습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/29897277/209433397-199383ee-629d-4fb2-9964-7360a6ff7bd9.png",
+          "size": "1885×959"
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/29897277/209433452-47b87462-dfaf-41bc-a7e9-927689e2675a.png",
+          "size": "1560×961"
+        },
+        {
+          "type": "text",
+          "content": "기본적으로 수 많은 AI 문제 추천 목록을 보여주기 위해서 카드형식을 취하며 가로 스크롤이 가능하도록 제작하였습니다. 문제에 대한 태그같은 경우, 태그마다 고유 색상을 추출하여, 라이트모드/다크모드에 맞게 색상 조절을 거친 뒤, 테두리 색으로 적용하였습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/29897277/209433494-a9ea7c99-1e93-41f9-97f4-cddff8dcc507.png",
+          "size": "1479×961"
+        },
+        {
+          "type": "text",
+          "content": "위 코드 쉘과 같은 경우에는 문제와 코드 영역을 시각적으로 분리하였으며 좌우 영역 크기 조절이 편하도록 제작하였습니다. 또한, 코드에디터와 같은 경우는 VSCode기반인 모나코 에디터를 사용하여 Python 코딩이 가능하도록 제작하였습니다."
+        }
+      ]
+    },
+    {
+      "title": "Q O J",
+      "img": "https://user-images.githubusercontent.com/47492535/103151381-0995bb00-47c1-11eb-89ef-a33e53f53d8d.png",
+      "info": ["SQL Online Judge System"],
+      "position": ["Front-end", "Database design"],
+      "date": ["MAY", "2020"],
+      "collaborator": ["NB", "X", "837477"],
+      "url": "https://www.notion.so/QOJ-398709cc3e6c4f18ae081c1ea8d9c88b",
+      "color": "#0C88A0",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103370717-dc267580-4b10-11eb-8399-96c411326f7f.png",
+          "size": "1664×836"
+        },
+        {
+          "type": "text",
+          "content": "QOJ는 Query + Online Judge System의 합성어로, 온라인으로 SQL 실행 및 문제를 풀어볼 수 있는 플랫폼입니다. 본 프로젝트는 세종대학교를 다니면서 알고리즘 문제에 대한 OJ 시스템은 존재하는 반면, SQL문에 대한 OJ 시스템이 부재하여 직접 만들어보게 되었습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364588-8a2a2380-4b01-11eb-959f-c602b7003af4.png",
+          "size": "824×595"
+        },
+        {
+          "type": "text",
+          "content": "위 사진처럼, 실제 문제를 푸는 공간은 3구간으로 나뉘어지는 레이아웃을 선택하였습니다. 이 때 좌우 레이아웃은 조절이 가능하도록 만들어, 사용자의 편의성을 증가시켰습니다. 또한 SQL 인젝션에 대한 공격 방지 및 데이터베이스의 무결성을 보장하기 위해서 MySQL의 트랜잭션 기능을 활용하는 등의 여러가지를 고려하여 제작하였습니다."
+        },
+        {
+          "type": "text",
+          "content": "이번 단계에서는 2주라는 짧은 일정상 관계로 보안쪽으로 많이 신경쓸 수가 없어 부득이하게 SELECT문 밖에 지원하지 않지만, Docker를 통해서 사용자가 쿼리문을 실행시킬 때마다 환경이 구축된 컨테이너에서 테스트를 실행시킨다면, Insert 및 Update문도 지원할 수 있을 것이라 예상이 들었습니다. 추후에 이 프로젝트가 재개된다면 이 아이디어를 적용시킬 예정입니다."
+        },
+        {
+          "type": "text",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "STUDIO",
+      "img": "https://raw.githubusercontent.com/altmshfkgudtjr/NB_Portfolio_2020/master/img.png",
+      "info": ["Portfolio template like", "a studio"],
+      "position": ["Toy Project"],
+      "date": ["JANUARY", "2020"],
+      "collaborator": ["NB"],
+      "url": "https://github.com/altmshfkgudtjr/NB_Portfolio_2020",
+      "color": "#707070",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364593-8bf3e700-4b01-11eb-9e91-f4a33d0d2310.png",
+          "size": "800×450"
+        },
+        {
+          "type": "text",
+          "content": "NB#log 사이트의 첫 번째 배포판입니다. STUDIO는 제가 Vue.js를 새롭게 공부하고자 시작한 프로젝트입니다. Back-end는 Node.js의 Express를 호스팅 서버는 Heroku를 사용하여 배포하였습니다. 간단한 프로젝트를 기획부터 배포까지 처리해보면서, 다시 한번 전반적인 개발 프로세스를 정리 할 수 있는 경험이 되었습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364592-8b5b5080-4b01-11eb-94dc-372d1d2da85e.png",
+          "size": "800×400"
+        },
+        {
+          "type": "text",
+          "content": "NB#log에서 '#' 은 이 프로젝트를 진행하면서 탄생하였습니다. 보통 '#(해시태그)' 는 사람을 태그하기 위해서 사용됩니다. 이와 같이, 본 프로젝트에서는 해시태그는 개발자와 사용자의 Connection의 의미를 담고 있으며, 사용자와의 소통을 잘 할 수 있는 개발자가 되기 위해서 프로젝트 전반적으로 '#' 을 사용하였습니다."
+        }
+      ]
+    },
+    {
+      "title": "SIGNUS",
+      "img": "https://user-images.githubusercontent.com/47492535/103151341-a1df7000-47c0-11eb-994e-36cf8dc83e96.png",
+      "info": ["Social Network Service In 20s"],
+      "position": ["Front-end", "Designer", "iOS"],
+      "date": ["NOVEMBER", "2020"],
+      "collaborator": ["Team IML"],
+      "url": "https://github.com/altmshfkgudtjr/SIGNUS_client",
+      "color": "#43A483",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103264231-6fff2100-49ed-11eb-9e8b-0bc93ec9c336.png",
+          "size": "718×467"
+        },
+        {
+          "type": "text",
+          "content": "인터넷 플랫폼의 접근성이 점점 좋아지면서, 사용자가 필요로 하는 수 많은 정보는 상당히 많은 사이트에서 게시되고 있습니다. 하지만 이로 인해서 원하는 정보를 탐색하는 과정은 오히려 점점 더 불편해지고 있습니다. 그렇게 시작된 프로젝트 SIGNUS는 나와 같은 20대 청년들에게 관심있는 정보들을 지속적으로 수집 및 통합, 인공지능을 이용해서 사용자에게 맞춤 정보를 추천해줍니다."
+        },
+        {
+          "type": "text",
+          "content": "이 프로젝트에서는 기존의 유사 서비스인 SOOJLE을 토대로, UI/UX를 개선시키는 작업을 진행하였습니다. 기존 순수 Javascript로 제작한 것과 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103264234-7097b780-49ed-11eb-99f0-18f2a7af5f60.png",
+          "size": "718×479"
+        },
+        {
+          "type": "text",
+          "content": "또한, 해당 프로젝트는 웹 서비스뿐만 아니라, Swift로 개발된 웹 서비스를 Wrapping하여 개발을 완료하였습니다. 자세한 내용은 다음 URL에서 확인할 수 있습니다. https://github.com/altmshfkgudtjr/SwiftUI_SIGNUS"
+        }
+      ]
+    },
+    {
+      "title": "SOOJLE",
+      "img": "https://user-images.githubusercontent.com/47492535/103151347-b02d8c00-47c0-11eb-97d2-06ff3ab9ae34.png",
+      "info": ["Univ. Sejong Information Service", "by A.I"],
+      "position": ["Front-end", "Data Crawler"],
+      "date": ["DECEMBER", "2019"],
+      "collaborator": ["Team IML"],
+      "url": "https://github.com/altmshfkgudtjr/SOOJLE_FRONT",
+      "color": "#CC372B",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364594-8bf3e700-4b01-11eb-9161-a6d5a6e6ff79.png",
+          "size": "800×572"
+        },
+        {
+          "type": "text",
+          "content": "세종대학교에서는 학생에게 필요한 정보를 여러 사이트에 공지하고 있습니다. 하지만 시간이 갈 수록 학생들이 필요한 정보들이 너무 퍼져있어 찾기 힘들다는 피드백을 받게 되었고, 대학교 정보 포털 사이트인 SOOJLE 프로젝트가 시작되었습니다."
+        },
+        {
+          "type": "text",
+          "content": "본 프로젝트에서 본인은 여러 곳에 흩어진 웹상의 모든 데이터를 정제 및 수집을 진행하였으며, 전반적인 FE 개발을 진행하였습니다. "
+        },
+        {
+          "type": "text",
+          "content": "본 프로젝트는 세종대학교 구성원이라는 타겟을 선정하여, 해당 구성원들에게 필요한 모든 정보를 AI를 통해서 체계화 시켰습니다. 또한 AI를 사용한 사용자 맞춤 추천 시스템을 통해서 빠르고 쉽게 나에게 필요한 정보를 받아 볼 수 있도록 제작하였습니다."
+        }
+      ]
+    },
+    {
+      "title": "MODAKBUL",
+      "img": "https://user-images.githubusercontent.com/47492535/103151349-b1f74f80-47c0-11eb-8634-56b12b04f241.png",
+      "info": ["SW Convergence College Official Site"],
+      "position": ["Front-end"],
+      "date": ["AUGUST", "2020"],
+      "collaborator": ["Team IML", "X", "James Jung"],
+      "url": "https://github.com/altmshfkgudtjr/MODAKBUL_INTEGRATE",
+      "color": "#455484",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364596-8c8c7d80-4b01-11eb-8ab7-d334f1a188ec.png",
+          "size": "800×370"
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364598-8d251400-4b01-11eb-9590-b6955a5ddeb3.png",
+          "size": "800×378"
+        },
+        {
+          "type": "text",
+          "content": "본 프로젝트는 소프트웨어융합대학 제 3대 학생회 번영에서 주최하는 공모전으로서, 세종대학교 소프트웨어 융합 대학 홈페이지 개발의 결과물입니다. 본 프로젝트에서는 기존의 카테고리식 게시판 시스템을 벗어나 Tagging 기반의 구조로 설계하였습니다. 이 구조를 통해서 자동으로 게시글이 게시판으로 다중 분류가 되어지는 시스템을 가졌습니다."
+        },
+        {
+          "type": "text",
+          "content": "또한 대학 홈페이지로서 공지, 투표 및 커뮤니티 기능이 도입되어있어, 학생회와 학우 간의 소통이 원활할 수 있도록 프로젝트를 진행하였습니다. 또한 다크 모드 기능을 추가하여 사용자 취향에 맞도록 서비스를 이용할 수 있도록 제작하였습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103364600-8d251400-4b01-11eb-97fa-039adb28e8bd.png",
+          "size": "800×564"
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103371215-3ecc4100-4b12-11eb-80b5-92151b5f3732.png",
+          "size": "400×600"
+        }
+      ]
+    },
+    {
+      "title": "ELE POSITION",
+      "img": "https://user-images.githubusercontent.com/47492535/103151348-b15eb900-47c0-11eb-9edd-f1e251704ab2.png",
+      "info": ["Stained Glass"],
+      "position": ["Toy Project"],
+      "date": ["NOVEMBER", "2020"],
+      "collaborator": ["NB"],
+      "url": "https://github.com/altmshfkgudtjr/ELEposition",
+      "color": "#CCB12B",
+      "post": [
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103264228-6e355d80-49ed-11eb-8eab-7ded7ebb94c4.png",
+          "size": "719×467"
+        },
+        {
+          "type": "text",
+          "content": "ELEposition(Element position)은 Apple의 Big Sur OS로부터 영감을 얻은 프로젝트입니다. 특정 DOM Element의 절대 좌표를 구해야하는 작업을 진행하던 와중, Background filter 효과를 씌운 여러 개의 BOX가 랜덤적으로 화면에 나타나면 예쁠 것 같다는 생각이 들었습니다. 그 결과, 여러 색이 겹쳐서 또 다른 색을 만들어 낸다는 것, Box 뒤 쪽에 있는 다른 Box들이 blur 효과로 퍼져서 흐리게 보이는 것이 합쳐져서 새로운 작품이 탄생하게 되었습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103264229-6f668a80-49ed-11eb-942f-2b844cd496f1.png",
+          "size": "327×271"
+        },
+        {
+          "type": "text",
+          "content": "하지만 여기서 background 색상이 몇 개 없다면, 자칫하다간 단조로운 느낌이 들 것 같아서, 많고 다양한 색을 알아보았고, 밝은 Color가 중심이 되도록 최종 선택하여 제작하였습니다. 또한, 본 프로젝트는 \"의도치않은 창조\" 라는 느낌을 바탕으로 제작하였기 때문에 Box Dragging 할 수 있는 기능은 몇 번의 고민 끝에 제외하기로 결정하였고, 배경화면 또한 물감이 쏟아지는 사진으로 선택하여 해당 느낌이 사용자에게 전달될 수 있도록 제작하였습니다."
+        },
+        {
+          "type": "image",
+          "content": "https://user-images.githubusercontent.com/47492535/103264230-6fff2100-49ed-11eb-9fc6-3a0c8583e46a.png",
+          "size": "448×672"
+        }
+      ]
+    }
+  ]
 }

@@ -15,13 +15,20 @@
   "education": [
     {
       "date": "2016.03 ~ 2023.02",
-      "content": "<ul><li>컴퓨터공학과 전공 졸업 예정입니다.</li>\n<li>전공 평점 <strong>4.1 / 4.5</strong></li></ul>",
+      "content": "<ul><li>컴퓨터공학과 전공 졸업</li>\n<li>전공 평점 <strong>4.1 / 4.5</strong></li></ul>",
       "management": "세종대학교"
     }
   ],
   "experience": [
     {
-      "date": "2022.02 ~ 현재 재직 중",
+      "date": "2022.03 ~ 현재 재직중",
+      "place": "Alocados",
+      "href": "https://github.com/team-alocados",
+      "content": "<mark>블록체인 기술을 사용하여, 인공지능 HR 어시스턴트 및 Web 3.0 사용자를 위한 커뮤니티 메신저를 개발합니다.</mark>\n\n현재 Web 3.0 커뮤니티 메신저 앱 개발을 진행하고 있습니다.<ul><li>FE 프로젝트 설계 및 개발 담당 (React, React-Native)</li><li>다국어지원 시스템 및 배포 프로세스 설계 및 개발(i18n)</li><li>AWS 생태계 내, CloudFront, K8S 등 FE단 CI/CD 배포 자동화 진행</li></ul>",
+      "role": "Frotend Software Engineer"
+    },
+    {
+      "date": "2022.02 ~ 2023.03",
       "place": "SPI",
       "href": "https://seoulpi.io/",
       "content": "<mark>전 세계 리츠 데이터와 결합 및 고도화한 상업용 부동산 콘텐츠&데이터 분석 서비스</mark>\n\n현재 FE 개발을 혼자 진행함으로서 프로덕트 및 백오피스의 전체 구조 설계부터 개발 및 테스트 외 서버 배포까지 FE관련 모든 작업을 책임지고 있습니다.<ul><li>React 기반 모든 FE 프로젝트 설계 및 개발 담당 (Next.js, Vite.js)</li><li>SPI 사내 백오피스 구축 (부동산 데이터 & CS)</li><li>국내외 자산 시각화를 위한 Map 라이브러리 개발 및 Github Organization Packages에 배포</li><li>GCP의 Cloud Run, Artifact Registry, Cloud Build를 통한 FE단 CI/CD 배포 자동화</li><li><a href='https://velog.io/@altmshfkgudtjr/File-Based-Routing-System' target='_blank'>File-Based Routing System 개발</a></li></ul>",
@@ -164,7 +171,7 @@
   "skills": {
     "Application": ["Web Crawling"],
     "Frontend": [
-      "Typescript, React, JQuery",
+      "Typescript, React, React-Native, JQuery",
       "Next.js, Vite.js",
       "Webpack, Babel",
       "Swift",
@@ -173,8 +180,8 @@
     ],
     "Backend": ["Express", "Flask", "MongoDB"],
     "DevOps": [
-      "AWS (EC2, ECS, S3)",
-      "GCP (Cloud Run, Cloud Functions, Cloud Build, Artifact Registry)",
+      "AWS (S3를 이용한 정적사이트 배포부터 ECS 또는 K8S를 사용하여 서버 배포를 위한 액션을 취할 수 있습니다. 그 외 Lambda를 통하여 필요한 기능을 개발할 수 있습니다.)",
+      "GCP (정적 사이트 배포부터 Cloud Run을 사용한 서버 배포를 위한 액션을 취할 수 있습니다. 그 외 Cloud Function을 통하여 필요한 기능을 개발할 수 있습니다.)",
       "Docker, Docker-Compose"
     ],
     "Data": ["SQL", "Google Analytics", "Google Tag Manager", "Amplitude"]
